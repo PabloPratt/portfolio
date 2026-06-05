@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ClerkProvider } from "@clerk/nextjs";
 import AiChatWidget from "@/components/AiChatWidget";
 import "./globals.css";
 
@@ -42,14 +43,16 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
       </head>
       <body className="bg-white text-slate-900 antialiased">
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-blue-600 focus:text-white focus:p-2"
-        >
-          Skip to main content
-        </a>
-        {children}
-        <AiChatWidget />
+        <ClerkProvider>
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-blue-600 focus:text-white focus:p-2"
+          >
+            Skip to main content
+          </a>
+          {children}
+          <AiChatWidget />
+        </ClerkProvider>
       </body>
     </html>
   );
