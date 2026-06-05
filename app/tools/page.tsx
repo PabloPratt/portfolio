@@ -33,6 +33,20 @@ const tools = [
     ai: true,
   },
   {
+    id: 'competitor-analyzer',
+    title: 'AI Competitor Analyzer',
+    description: 'Get SWOT analysis and competitive positioning with AI insights.',
+    path: '/tools/competitor-analyzer',
+    ai: true,
+  },
+  {
+    id: 'pitch-generator',
+    title: 'AI Pitch Deck Generator',
+    description: 'Generate investor-ready pitch deck outlines with talking points.',
+    path: '/tools/pitch-generator',
+    ai: true,
+  },
+  {
     id: 'json-formatter',
     title: 'JSON Formatter',
     description: 'Paste JSON and get formatted, validated output. Detects errors instantly.',
