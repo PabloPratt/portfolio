@@ -23,13 +23,13 @@ export default function Contact() {
           <div className="grid gap-8 md:grid-cols-2">
             {/* Email Card */}
             <a
-              href="mailto:pratt3508@gmail.com"
+              href="mailto:pablo.a.pratt@gmail.com"
               className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border border-slate-200 p-8 flex flex-col items-center gap-4 text-center hover:border-blue-600"
             >
               <Mail size={40} className="text-blue-600" />
               <div>
                 <h3 className="text-xl font-bold text-slate-900">Email</h3>
-                <p className="text-slate-600 mt-2">pratt3508@gmail.com</p>
+                <p className="text-slate-600 mt-2">pablo.a.pratt@gmail.com</p>
               </div>
             </a>
 
@@ -79,7 +79,7 @@ export default function Contact() {
               I'm always interested in interesting projects and collaborations. Feel free to reach out if you have an idea or want to chat about web development.
             </p>
             <a
-              href="mailto:pratt3508@gmail.com"
+              href="mailto:pablo.a.pratt@gmail.com"
               className="inline-block px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
             >
               Send me an email

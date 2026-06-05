@@ -1,20 +1,28 @@
 export default function Skills() {
   const skillCategories = [
     {
-      category: 'Frontend',
-      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'HTML/CSS', 'Accessibility (WCAG)', 'Web Audio API', 'Canvas API'],
+      category: '🛠️ Engineering',
+      skills: ['React', 'Next.js', 'TypeScript', 'Node.js', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Accessibility (WCAG)'],
     },
     {
-      category: 'Backend',
-      skills: ['Node.js', 'TypeScript', 'API Routes', 'Supabase', 'PostgreSQL', 'Clerk Auth', 'Stripe Payments', 'WebHooks'],
+      category: '🔒 Security & Privacy',
+      skills: ['OWASP Top 10', 'Data Classification', 'GDPR Compliance', 'Information Security', 'Password Security', 'Risk Assessment', 'Cybersecurity'],
     },
     {
-      category: 'Integrations',
-      skills: ['Gemini API', 'UnusualWhales API', 'Socrata Data API', 'Vercel', 'GitHub', 'TradingView', 'Web Audio'],
+      category: '💼 Business & Finance',
+      skills: ['Financial Analysis', 'Business Strategy', 'Market Research', 'Financial Modeling', 'Forecasting', 'ROI Calculation', 'Budget Planning'],
     },
     {
-      category: 'Tools & Practices',
-      skills: ['Git/GitHub', 'CLI Development', 'Real-time Data', 'Testing', 'Performance Optimization', 'SEO', 'Deployment'],
+      category: '🌍 Sales & Leadership',
+      skills: ['Enterprise Sales (Dell)', 'B2B Sales Strategy', 'Negotiation', 'Client Relationships', 'Global Markets', 'International Relations', 'Team Leadership'],
+    },
+    {
+      category: '🤝 Social Impact',
+      skills: ['Nonprofit Operations', 'Grant Research', 'Fundraising Strategy', 'Impact Measurement', 'Community Development', 'Volunteer Management'],
+    },
+    {
+      category: '🔌 Integrations & APIs',
+      skills: ['Anthropic Claude API', 'Stripe Payments', 'Clerk Auth', 'Supabase', 'UnusualWhales API', 'Vercel', 'GitHub'],
     },
   ];
 
@@ -46,16 +54,16 @@ export default function Skills() {
           {/* Highlights */}
           <div className="grid gap-6 md:grid-cols-3 pt-8 border-t border-slate-200">
             <div className="space-y-2">
-              <p className="text-3xl font-bold text-blue-600">100%</p>
-              <p className="text-slate-600">Accessibility Compliant (WCAG AA)</p>
+              <p className="text-3xl font-bold text-blue-600">3</p>
+              <p className="text-slate-600">Advanced Degrees (Masters, Finance, Intl Relations)</p>
             </div>
             <div className="space-y-2">
-              <p className="text-3xl font-bold text-blue-600">5+</p>
-              <p className="text-slate-600">Production Apps Deployed</p>
+              <p className="text-3xl font-bold text-blue-600">5</p>
+              <p className="text-slate-600">Years at Dell Global Sales</p>
             </div>
             <div className="space-y-2">
-              <p className="text-3xl font-bold text-blue-600">10+</p>
-              <p className="text-slate-600">APIs Integrated</p>
+              <p className="text-3xl font-bold text-blue-600">25+</p>
+              <p className="text-slate-600">Tools & Features Built</p>
             </div>
           </div>
         </div>
