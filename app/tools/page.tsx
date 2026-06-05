@@ -5,6 +5,34 @@ import { ChevronRight } from 'lucide-react';
 
 const tools = [
   {
+    id: 'resume-scorer',
+    title: 'AI Resume Scorer',
+    description: 'Paste your resume and job description. Get an instant AI match score, gaps, and improvements.',
+    path: '/tools/resume-scorer',
+    ai: true,
+  },
+  {
+    id: 'business-validator',
+    title: 'AI Business Idea Validator',
+    description: 'Validate business ideas with market analysis, competitors, risks, and viability scoring.',
+    path: '/tools/business-validator',
+    ai: true,
+  },
+  {
+    id: 'cold-email',
+    title: 'AI Cold Email Generator',
+    description: 'Generate personalized cold outreach emails with follow-ups using AI.',
+    path: '/tools/cold-email',
+    ai: true,
+  },
+  {
+    id: 'invoice-generator',
+    title: 'AI Invoice Generator',
+    description: 'Create professional invoices instantly with AI-formatted text.',
+    path: '/tools/invoice-generator',
+    ai: true,
+  },
+  {
     id: 'json-formatter',
     title: 'JSON Formatter',
     description: 'Paste JSON and get formatted, validated output. Detects errors instantly.',
@@ -62,24 +90,49 @@ export default function ToolsPage() {
 
       <section className="py-16 sm:py-24 bg-slate-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-6 md:grid-cols-2">
-            {tools.map((tool) => (
-              <Link
-                key={tool.id}
-                href={tool.path}
-                className="bg-white rounded-lg shadow-md hover:shadow-lg hover:border-blue-600 transition-all border border-slate-200 p-6 flex flex-col gap-4 group"
-              >
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
-                    {tool.title}
-                  </h3>
-                  <p className="text-slate-600 mt-2">{tool.description}</p>
-                </div>
-                <div className="flex items-center text-blue-600 font-semibold">
-                  Try it <ChevronRight size={18} className="ml-1 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </Link>
-            ))}
+          <div>
+            <h3 className="text-lg font-bold text-slate-900 mb-4">🤖 AI-Powered Tools</h3>
+            <div className="grid gap-6 md:grid-cols-2 mb-8">
+              {tools.filter(t => t.ai).map((tool) => (
+                <Link
+                  key={tool.id}
+                  href={tool.path}
+                  className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg shadow-md hover:shadow-lg hover:border-blue-600 transition-all border border-blue-200 p-6 flex flex-col gap-4 group"
+                >
+                  <div>
+                    <div className="inline-block px-2 py-0.5 bg-blue-100 text-blue-700 text-xs font-bold rounded-full mb-2">AI TOOL</div>
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                      {tool.title}
+                    </h3>
+                    <p className="text-slate-600 mt-2">{tool.description}</p>
+                  </div>
+                  <div className="flex items-center text-blue-600 font-semibold">
+                    Try it <ChevronRight size={18} className="ml-1 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <h3 className="text-lg font-bold text-slate-900 mb-4">Utility Tools</h3>
+            <div className="grid gap-6 md:grid-cols-2">
+              {tools.filter(t => !t.ai).map((tool) => (
+                <Link
+                  key={tool.id}
+                  href={tool.path}
+                  className="bg-white rounded-lg shadow-md hover:shadow-lg hover:border-blue-600 transition-all border border-slate-200 p-6 flex flex-col gap-4 group"
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                      {tool.title}
+                    </h3>
+                    <p className="text-slate-600 mt-2">{tool.description}</p>
+                  </div>
+                  <div className="flex items-center text-blue-600 font-semibold">
+                    Try it <ChevronRight size={18} className="ml-1 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
