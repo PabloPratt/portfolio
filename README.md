@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio SaaS - AI-Powered Tools Platform
 
-## Getting Started
+A full-stack SaaS platform with 12 AI-powered tools, mobile app, and monetization system. Built with Next.js, React Native, Clerk auth, Stripe payments, and Anthropic Claude API.
 
-First, run the development server:
+**Live Demo**: https://portfolio-n9uqiggrl-signalinput25-s-projects.vercel.app  
+**GitHub**: https://github.com/PabloPratt/portfolio
 
+## 🚀 Quick Start
+
+### Web App
 ```bash
+cd /Users/regalia/portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Mobile App
+```bash
+cd /Users/regalia/portfolio-mobile
+npm install
+npm run web    # Test on browser
+npm run ios    # iOS simulator
+npm run android # Android emulator
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🤖 12 AI-Powered Premium Tools
+Resume Scorer • Business Validator • Cold Email Generator • Invoice Generator • Content Generator • Competitor Analyzer • Pitch Deck Generator • Code Reviewer • LinkedIn Posts • Creative Writer • SEO Analyzer • AI Chat Widget
 
-## Learn More
+### 🛠️ 6 Utility Tools (Free)
+JSON Formatter • Timestamp Converter • Base64 Encoder • Color Contrast Checker • Word Counter • Regex Tester
 
-To learn more about Next.js, take a look at the following resources:
+### 💰 3 Pricing Tiers
+- **Free**: $0, 100 uses/month, limited AI
+- **Pro**: $29/mo, unlimited uses, full access
+- **Enterprise**: $99/mo, team workspace, full API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🏗️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Frontend**: Next.js 15, React 19, TypeScript, Tailwind CSS, Clerk Auth  
+**Backend**: Next.js API Routes, Anthropic Claude, Supabase PostgreSQL  
+**Mobile**: React Native, Expo, React Navigation, Clerk Expo  
+**Payments**: Stripe integration with webhooks  
+**Deployment**: Vercel (web), EAS Build (mobile)
 
-## Deploy on Vercel
+## 🔐 Security & Accessibility
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✅ WCAG 2.1 AA compliant  
+✅ Clerk handles all authentication  
+✅ Stripe webhook verification  
+✅ Row-level security on database  
+✅ Responsive mobile-first design  
+✅ Semantic HTML with ARIA labels  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📊 Database
+
+```
+user_profiles: id, email, name, plan, stripe_customer_id, usage, created_at
+tool_usage: id, user_id, tool, input_tokens, output_tokens, created_at
+```
+
+## 🔧 Environment Variables Required
+
+ANTHROPIC_API_KEY, CLERK keys, SUPABASE keys, STRIPE keys
+
+## 🚀 Deployment
+
+**Web**: `git push origin main` (auto-deploys to Vercel)  
+**Mobile**: `eas build --platform ios/android`
+
+## 📈 Monetization
+
+- Pro subscriptions: $29/mo
+- Enterprise: $99/mo  
+- API usage: $0.001 per 1K tokens
+- Premium integrations & white-label licensing
+
+## 🎯 Status
+
+✅ Web app live and fully functional  
+✅ 14 AI agent endpoints deployed  
+✅ Mobile app skeleton with full navigation  
+✅ Stripe payments integrated  
+✅ Clerk authentication working  
+⏳ Mobile: ready for iOS/Android build  
+
+---
+
+Built with ❤️ by Pablo Pratt | Powered by Claude AI
