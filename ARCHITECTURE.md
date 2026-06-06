@@ -16,7 +16,7 @@ This is a **full-stack SaaS application** with web and mobile clients, AI-powere
 - **Hosting**: Vercel
 
 ### Live URL
-https://portfolio-broxgbcv4-signalinput25-s-projects.vercel.app
+https://portfolio-zeta-green-62.vercel.app
 
 ### GitHub
 https://github.com/PabloPratt/portfolio

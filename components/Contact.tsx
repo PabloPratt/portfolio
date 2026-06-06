@@ -53,9 +53,10 @@ export default function Contact() {
             <h3 className="text-2xl font-bold text-slate-900">My Projects & Links</h3>
             <div className="grid gap-4 md:grid-cols-2">
               {[
-                { label: 'Janus Live', href: 'https://janus-signalinput25-s-projects.vercel.app' },
-                { label: 'Earnings Radar', href: 'https://earnings-radar.vercel.app' },
+                { label: 'Janus Live', href: 'https://janus-eta.vercel.app' },
+                { label: 'Earnings Radar', href: 'https://earnings-radar-snowy.vercel.app' },
                 { label: 'EMDR-BLS Tool', href: 'https://emdr-bls.vercel.app' },
+                { label: 'Obsidian Flow', href: 'https://obsidian-flow-three.vercel.app' },
                 { label: 'All Repos', href: 'https://github.com/PabloPratt?tab=repositories' },
               ].map((link) => (
                 <a

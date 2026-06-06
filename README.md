@@ -2,7 +2,7 @@
 
 A full-stack SaaS platform with 12 AI-powered tools, mobile app, and monetization system. Built with Next.js, React Native, Clerk auth, Stripe payments, and Anthropic Claude API.
 
-**Live Demo**: https://portfolio-n9uqiggrl-signalinput25-s-projects.vercel.app  
+**Live Demo**: https://portfolio-zeta-green-62.vercel.app  
 **GitHub**: https://github.com/PabloPratt/portfolio
 
 ## 🚀 Quick Start

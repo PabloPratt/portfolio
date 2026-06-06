@@ -8,7 +8,18 @@ function GithubIcon({ size = 24, className = '' }: { size?: number; className?: 
   );
 }
 
-const projects = [
+type Project = {
+  id: number;
+  title: string;
+  description: string;
+  tags: string[];
+  live?: string;
+  github?: string;
+  status?: string;
+  featured: boolean;
+};
+
+const projects: Project[] = [
   {
     id: 1,
     title: 'Janus',
@@ -20,63 +31,44 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Earnings Radar Lite',
-    description: 'Market watchlist filtering upcoming earnings by signal strength, surprise history, and guidance risk. Search, sort, and compare upcoming vs. past results.',
-    tags: ['Vanilla JS', 'HTML5', 'Responsive', 'Real-time Data'],
-    live: 'https://pablopratt.github.io/earnings-radar-lite/',
-    github: 'https://github.com/PabloPratt/earnings-radar-lite',
+    title: 'Obsidian Flow',
+    description: 'CLI trading dashboard and price screener for monitoring crypto and stocks. Real-time price updates, technical analysis, and custom alerts.',
+    tags: ['Node.js', 'CLI', 'TypeScript', 'Dashboard', 'Trading Tools'],
+    live: 'https://obsidian-flow-three.vercel.app',
+    github: 'https://github.com/PabloPratt/obsidian-flow',
     featured: true,
   },
   {
     id: 3,
-    title: 'EMDR-BLS',
-    description: 'Bilateral Stimulation therapy tool for EMDR using moving dots, audio tones, and imagery. Includes bilateral pacing timer and multiple visual modes.',
-    tags: ['Next.js 16', 'React', 'Web Audio API', 'Canvas', 'Accessibility'],
-    live: 'https://emdr-bls.vercel.app',
-    github: 'https://github.com/PabloPratt/emdr-bls',
+    title: 'ATX Services Scout',
+    description: 'Austin services comparison app for mechanics, cleaners, lawn care, plumbers, and electricians. Tracks known prices, quote-required providers, source notes, manual updates, and outreach queues without relying on paid data APIs.',
+    tags: ['JavaScript', 'Vercel', 'Local Data', 'Search UX', 'Price Research', 'Service Marketplace'],
+    live: 'https://atx-services-scout.vercel.app',
+    github: 'https://github.com/PabloPratt/atx-services-scout',
     featured: true,
   },
   {
     id: 4,
-    title: 'Rate My Manager',
-    description: 'Anonymous review platform for manager accountability. Search by manager, company, or department. View ratings, compensation, and detailed feedback.',
-    tags: ['Firebase', 'JavaScript', 'Responsive Design', 'Anonymous'],
-    live: 'https://pablopratt.github.io/RateMyManager/',
-    github: 'https://github.com/PabloPratt/RateMyManager',
+    title: 'DOOOD',
+    description: 'Day One Or One Day. An AI-powered book completion platform that turns an idea into a blueprint, writing quests, chapter milestones, and a finish-the-book dashboard.',
+    tags: ['Next.js 16', 'Gemini API', 'Writing UX', 'Gamification', 'Publishing'],
+    status: 'Coming soon',
     featured: true,
   },
   {
     id: 5,
-    title: 'Obsidian Flow',
-    description: 'Stock market analytics dashboard. Real-time price updates, technical analysis, earnings tracking, and custom alerts for stocks and crypto.',
-    tags: ['Next.js', 'React', 'API Integration', 'Dashboard'],
-    live: 'https://obsidian-flow-production.up.railway.app',
-    github: 'https://github.com/PabloPratt/obsidian-flow',
-    featured: false,
-  },
-  {
-    id: 6,
-    title: 'Civic Search Dashboard',
-    description: 'Analyst UI for searching public-record signals across counties, categories, and source confidence. Prototype for civic intelligence tooling.',
-    tags: ['React', 'Data Visualization', 'Public Records', 'Search'],
-    live: 'https://pablopratt.github.io/civic-search-dashboard/',
-    github: 'https://github.com/PabloPratt/civic-search-dashboard',
-    featured: false,
-  },
-  {
-    id: 7,
-    title: 'Manager Signal Board',
-    description: 'Dashboard for feedback themes, coaching priorities, and privacy-aware people analytics. Demo for HR and management workflows.',
-    tags: ['React', 'Dashboard', 'Analytics', 'Data Viz'],
-    live: 'https://pablopratt.github.io/manager-signal-board/',
-    github: 'https://github.com/PabloPratt/manager-signal-board',
+    title: 'EMDR-BLS',
+    description: 'Bilateral stimulation therapy tool for EMDR using moving dots, audio tones, and imagery. Includes bilateral pacing timer and multiple visual modes.',
+    tags: ['Next.js 16', 'React', 'Web Audio API', 'Canvas', 'Accessibility'],
+    live: 'https://emdr-bls.vercel.app',
+    github: 'https://github.com/PabloPratt/emdr-bls',
     featured: false,
   },
 ];
 
 export default function Projects() {
-  const featuredProjects = projects.filter(p => p.featured);
-  const otherProjects = projects.filter(p => !p.featured);
+  const featuredProjects = projects.filter((p) => p.featured);
+  const otherProjects = projects.filter((p) => !p.featured);
 
   return (
     <section id="projects" className="py-20 sm:py-32 bg-slate-50">
@@ -87,7 +79,6 @@ export default function Projects() {
             <p className="text-lg text-slate-600">A selection of applications I've built from concept to production.</p>
           </div>
 
-          {/* Featured Projects Grid */}
           <div className="grid gap-8 md:grid-cols-2">
             {featuredProjects.map((project) => (
               <article
@@ -96,6 +87,11 @@ export default function Projects() {
               >
                 <div className="p-6 flex-1 flex flex-col gap-4">
                   <h3 className="text-2xl font-bold text-slate-900">{project.title}</h3>
+                  {project.status && (
+                    <span className="inline-flex w-fit rounded-full bg-amber-100 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-amber-800">
+                      {project.status}
+                    </span>
+                  )}
                   <p className="text-slate-600 flex-1">{project.description}</p>
 
                   <div className="space-y-4">
@@ -123,16 +119,18 @@ export default function Projects() {
                           Live Demo
                         </a>
                       )}
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white font-semibold rounded-lg transition-colors"
-                        aria-label={`View ${project.title} on GitHub`}
-                      >
-                        <GithubIcon size={18} />
-                        Code
-                      </a>
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white font-semibold rounded-lg transition-colors"
+                          aria-label={`View ${project.title} on GitHub`}
+                        >
+                          <GithubIcon size={18} />
+                          Code
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -140,7 +138,6 @@ export default function Projects() {
             ))}
           </div>
 
-          {/* Other Projects */}
           {otherProjects.length > 0 && (
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-slate-900">Other Projects</h3>
@@ -164,16 +161,32 @@ export default function Projects() {
                         ))}
                       </div>
                     </div>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white font-semibold rounded-lg transition-colors whitespace-nowrap"
-                      aria-label={`View ${project.title} on GitHub`}
-                    >
-                      <GithubIcon size={18} />
-                      Code
-                    </a>
+                    <div className="flex flex-wrap gap-3">
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors whitespace-nowrap"
+                          aria-label={`Visit ${project.title} live site`}
+                        >
+                          <ExternalLink size={18} />
+                          Live Demo
+                        </a>
+                      )}
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-slate-700 hover:bg-slate-800 text-white font-semibold rounded-lg transition-colors whitespace-nowrap"
+                          aria-label={`View ${project.title} on GitHub`}
+                        >
+                          <GithubIcon size={18} />
+                          Code
+                        </a>
+                      )}
+                    </div>
                   </article>
                 ))}
               </div>
