@@ -43,6 +43,14 @@ const paths = [
     image:
       "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
   },
+  {
+    title: "Consulting",
+    href: "/consulting",
+    kicker: "Contract work",
+    text: "Focused advisory for product, data, sales, dashboards, and stuck prototypes that need a clear next step.",
+    image:
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+  },
 ];
 
 export default function Home() {

@@ -34,6 +34,9 @@ export default function Footer() {
               <li>
                 <Link href="/contact" className="text-sm hover:text-white transition-colors">Contact</Link>
               </li>
+              <li>
+                <Link href="/consulting" className="text-sm hover:text-white transition-colors">Consulting</Link>
+              </li>
             </ul>
           </div>
 
