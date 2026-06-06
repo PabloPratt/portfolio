@@ -7,7 +7,7 @@ const PORTFOLIO_CONTEXT = `You are an AI assistant for Pablo Pratt's portfolio w
 
 Portfolio Information:
 - Janus: Texas business intelligence SaaS with search and registered agent service
-- Earnings Radar: Real-time stock screener with analyst sentiment analysis
+- DOOOD: Day One Or One Day book completion platform with blueprints, writing quests, and progress tracking
 - EMDR-BLS: Bilateral stimulation therapy tool for PTSD treatment
 - Obsidian Flow: CLI trading dashboard and price screener
 - Developer Tools: JSON formatter, timestamp converter, Base64 encoder, color contrast checker, word counter, regex tester

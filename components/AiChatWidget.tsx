@@ -49,9 +49,9 @@ export default function AiChatWidget() {
         body: JSON.stringify({ messages: newMessages }),
       });
       const data = await res.json();
-      setMessages([...newMessages, { role: 'assistant', content: data.message || "I'm having trouble connecting right now. Try emailing pratt3508@gmail.com!" }]);
+      setMessages([...newMessages, { role: 'assistant', content: data.message || "I'm having trouble connecting right now. Try emailing pablo.a.pratt@gmail.com!" }]);
     } catch {
-      setMessages([...newMessages, { role: 'assistant', content: "Connection error. Please email pratt3508@gmail.com directly!" }]);
+      setMessages([...newMessages, { role: 'assistant', content: "Connection error. Please email pablo.a.pratt@gmail.com directly!" }]);
     } finally {
       setLoading(false);
     }

@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-bold text-white">Pablo Pratt</h3>
             <p className="text-sm">
-              Full-stack developer building innovative web applications with accessibility-first design.
+              Builder, Dell sales leader, security student, and native Spanish speaker based in Austin.
             </p>
           </div>
 
@@ -20,19 +20,19 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-white uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#projects" className="text-sm hover:text-white transition-colors">
-                  Projects
-                </a>
+                <Link href="/work" className="text-sm hover:text-white transition-colors">Work</Link>
               </li>
               <li>
-                <a href="#skills" className="text-sm hover:text-white transition-colors">
-                  Skills
-                </a>
+                <Link href="/about" className="text-sm hover:text-white transition-colors">About</Link>
               </li>
               <li>
-                <a href="#contact" className="text-sm hover:text-white transition-colors">
-                  Contact
-                </a>
+                <Link href="/leadership" className="text-sm hover:text-white transition-colors">Leadership</Link>
+              </li>
+              <li>
+                <Link href="/hobbies" className="text-sm hover:text-white transition-colors">Hobbies</Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-sm hover:text-white transition-colors">Contact</Link>
               </li>
             </ul>
           </div>
@@ -43,17 +43,17 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://github.com/PabloPratt"
+                  href="https://www.linkedin.com/in/pablopratt"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm hover:text-white transition-colors"
                 >
-                  GitHub
+                  LinkedIn
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:pratt3508@gmail.com"
+                  href="mailto:pablo.a.pratt@gmail.com"
                   className="text-sm hover:text-white transition-colors"
                 >
                   Email

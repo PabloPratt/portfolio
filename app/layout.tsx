@@ -5,15 +5,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Pablo Pratt | Full Stack Developer & Product Builder",
-  description: "Portfolio of innovative web applications including Janus (Texas business intelligence), Earnings Radar (stock screener), and EMDR-BLS (therapy tool).",
-  keywords: "portfolio, developer, next.js, react, full stack, web development",
-  authors: [{ name: "Pablo Pratt", url: "https://github.com/PabloPratt" }],
+  description: "Portfolio and background for Pablo Pratt: Dell sales leader, product builder, security M.S. graduate, and bilingual EN/ES operator.",
+  keywords: "portfolio, developer, next.js, react, full stack, ai agents, security, product builder",
+  authors: [{ name: "Pablo Pratt", url: "https://portfolio-zeta-green-62.vercel.app" }],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://portfolio-zeta-green-62.vercel.app",
     title: "Pablo Pratt | Full Stack Developer",
-    description: "Portfolio of innovative web applications",
+    description: "Portfolio and background for Pablo Pratt",
   },
 };
 

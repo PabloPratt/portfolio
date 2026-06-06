@@ -1,9 +1,8 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white">
-      {/* Background Image */}
       <div className="absolute inset-0 opacity-20">
         <Image
           src="/hero-workspace.png"
@@ -14,54 +13,52 @@ export default function Hero() {
         />
       </div>
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent" />
 
-      {/* Content */}
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
-        <div className="space-y-8 max-w-2xl">
+      <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
+        <div className="max-w-2xl space-y-8">
           <div className="space-y-4">
             <p className="text-sm font-bold uppercase tracking-widest text-blue-400">Builder Portfolio</p>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
-              Pablo Pratt
-            </h1>
-            <p className="text-xl sm:text-2xl text-slate-300">
-              Software projects for public data, market signals, personal productivity, and practical decision tools.
+            <h1 className="text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">Pablo Pratt</h1>
+            <p className="max-w-3xl text-xl text-slate-300 sm:text-2xl">
+              Sales leader, builder, and security graduate
             </p>
-            <p className="text-lg text-slate-400">
-              Full-stack developer with a background in security, privacy, and enterprise leadership. I build focused interfaces for messy real-world information.
+            <p className="max-w-3xl text-lg text-slate-400">
+              UT Austin M.S. in Information Security & Privacy, dual B.A.s in International Relations & Global Studies and Finance, Computer Science minor, fluent English/Spanish, and five years at Dell
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-8">
+          <div className="flex flex-col gap-4 pt-8 sm:flex-row">
             <a
-              href="#projects"
-              className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors shadow-lg"
+              href="/work"
+              className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700"
             >
               View Projects
             </a>
             <a
-              href="https://github.com/PabloPratt"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg transition-colors border border-slate-600"
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-lg bg-slate-700 px-6 py-3 font-semibold text-white transition-colors hover:bg-slate-600"
             >
-              GitHub Profile
+              Contact
             </a>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-12 border-t border-slate-800">
+          <div className="grid grid-cols-2 gap-6 border-t border-slate-800 pt-12 sm:grid-cols-4">
             <div>
-              <p className="text-3xl font-bold text-blue-400">10+</p>
-              <p className="text-slate-400 text-sm">Live Projects</p>
+              <p className="text-3xl font-bold text-blue-400">237%</p>
+              <p className="text-slate-400">Peak Quota Attainment</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-blue-400">25K+</p>
-              <p className="text-slate-400 text-sm">Lines of Code</p>
+              <p className="text-3xl font-bold text-blue-400">7.5K+</p>
+              <p className="text-slate-400">ERG Members Led</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-blue-400">3</p>
-              <p className="text-slate-400 text-sm">Degrees</p>
+              <p className="text-3xl font-bold text-blue-400">EN/ES</p>
+              <p className="text-slate-400">Fluent bilingual, native Spanish speaker</p>
+            </div>
+            <div>
+              <p className="text-3xl font-bold text-blue-400">Jan 2027</p>
+              <p className="text-slate-400">IE dual MBA / analytics start</p>
             </div>
           </div>
         </div>
