@@ -52,7 +52,8 @@ const projects: Project[] = [
     title: 'DOOOD',
     description: 'Day One Or One Day. An AI-powered book completion platform that turns an idea into a blueprint, writing quests, chapter milestones, and a finish-the-book dashboard.',
     tags: ['Next.js 16', 'Gemini API', 'Writing UX', 'Gamification', 'Publishing'],
-    status: 'Coming soon',
+    live: 'https://doood-xi.vercel.app',
+    github: 'https://github.com/PabloPratt/doood',
     featured: true,
   },
   {
