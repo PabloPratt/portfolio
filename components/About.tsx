@@ -8,7 +8,7 @@ export default function About() {
           <div className="space-y-4">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">About Me</h2>
             <p className="text-lg text-slate-600">
-              I'm a first-generation American, a native Spanish speaker, and someone who likes turning complicated systems into something people can actually use. I learned sales at Uber in the field, then spent five years selling enterprise infrastructure at Dell across SLED, SMB, enterprise, and global alliances. I now support Dell's largest cloud service providers and data center customers. I think in connections: how a security decision, a financial model, a sales motion, and a user's real problem all shape the same product. I lead Dell's 7,500-member Latino Connection ERG, have served on the Texas Emerging Leaders Board for TNOYS and the National Youth Advisory Board at Young Invincibles, and I start IE University's dual International MBA / M.S. in Business Analytics & Data Science in January 2027.
+              I'm a first-generation American, a native Spanish speaker, and a builder who learned business by working close to the customer. I started in field sales at Uber, traveling across Texas to sign new restaurants and understand what local operators actually needed. I then spent five years at Dell selling infrastructure across SLED, SMB, enterprise, telecom, and global cloud accounts. I now support Dell's largest cloud service provider and data center customers. The pattern is the same in sales and software: understand the real workflow, make the complex parts clear, and build something useful enough to survive contact with reality.
             </p>
           </div>
 
@@ -33,13 +33,13 @@ export default function About() {
             <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-md">
               <h3 className="text-2xl font-bold text-slate-900">Short version</h3>
               <p className="mt-4 leading-7 text-slate-600">
-                I am most comfortable where technical work meets business pressure. That can mean helping a customer understand infrastructure risk, building a market dashboard, cleaning up a messy dataset, or turning an idea into a working product people can click through.
+                I am most comfortable where technical work meets business pressure. That can mean helping a customer understand infrastructure risk, building a market dashboard, cleaning up a messy dataset, or turning an idea into a product people can actually click through.
               </p>
               <p className="mt-4 leading-7 text-slate-600">
-                The through-line is practical: make the complex thing understandable, useful, and honest.
+                My background sits at the intersection of enterprise sales, security, public policy, and product building. I care about systems, but I care more about whether people can use them.
               </p>
               <p className="mt-4 leading-7 text-slate-600">
-                Outside work, I keep a low-key rotation of travel, books, writing, and projects that are a little less polished than the public version but usually more interesting.
+                Outside work, I keep a rotation of reading, writing, public-interest work, and projects that start as personal tools before becoming something public.
               </p>
             </div>
           </div>
@@ -71,10 +71,15 @@ export default function About() {
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Professional Background</h3>
               <div className="space-y-4">
+                <div className="border-l-4 border-orange-600 pl-4">
+                  <p className="font-bold text-slate-900">Uber Field Sales</p>
+                  <p className="text-slate-600">Account representative signing new restaurant partners across Texas</p>
+                  <p className="text-sm text-slate-500 mt-1">Learned outbound prospecting, local-market expansion, and operator-first selling by working in the field</p>
+                </div>
                 <div className="border-l-4 border-blue-600 pl-4">
                   <p className="font-bold text-slate-900">Global Sales Leader</p>
                   <p className="text-slate-600">Dell across SLED, SMB, enterprise, and global alliances</p>
-                  <p className="text-sm text-slate-500 mt-1">Currently supporting Dell's largest cloud service providers and data center customers</p>
+                  <p className="text-sm text-slate-500 mt-1">Currently supporting Dell's largest cloud service providers and data center customers; exceeded quota up to 237%</p>
                 </div>
                 <div className="border-l-4 border-emerald-600 pl-4">
                   <p className="font-bold text-slate-900">Technical Sales Program</p>
@@ -83,6 +88,11 @@ export default function About() {
                 <div className="border-l-4 border-purple-600 pl-4">
                   <p className="font-bold text-slate-900">Global ERG Chair</p>
                   <p className="text-slate-600">Youngest sitting ERG leader in Dell's history, leading the 7,500+ member Latino Connection ERG</p>
+                </div>
+                <div className="border-l-4 border-cyan-600 pl-4">
+                  <p className="font-bold text-slate-900">Policy & Civic Work</p>
+                  <p className="text-slate-600">Research, advocacy, and board work across Young Invincibles, TNOYS, and Austin civic organizations</p>
+                  <p className="text-sm text-slate-500 mt-1">Focused on student access, tenant rights, immigration, healthcare, and youth policy</p>
                 </div>
                 <div className="border-l-4 border-orange-600 pl-4">
                   <p className="font-bold text-slate-900">Executive Communication</p>
@@ -119,12 +129,12 @@ export default function About() {
 
               <div className="p-4 bg-orange-50 border border-orange-200 rounded-lg">
                 <p className="font-bold text-slate-900 mb-2">Sales & Communication</p>
-                <p className="text-sm text-slate-700">Full-cycle and global account experience means I can articulate value, solve complex problems, and communicate with technical teams and C-suite stakeholders.</p>
+                <p className="text-sm text-slate-700">Uber field sales and Dell global account work trained me to sell in the room, build trust, and translate technical value for operators, technical teams, and executives.</p>
               </div>
 
               <div className="p-4 bg-pink-50 border border-pink-200 rounded-lg">
                 <p className="font-bold text-slate-900 mb-2">Impact-Driven</p>
-                <p className="text-sm text-slate-700">Leading a 7,500+ member global ERG ties my impact work to real organizational leadership, not just volunteer participation.</p>
+                <p className="text-sm text-slate-700">ERG leadership, youth-policy work, and civic boards tie my impact work to real organizational responsibility, not just volunteer participation.</p>
               </div>
 
               <div className="p-4 bg-cyan-50 border border-cyan-200 rounded-lg">
@@ -134,10 +144,10 @@ export default function About() {
             </div>
           </div>
 
-          {/* Tools Built for Different Audiences */}
+          {/* Experiments Built for Different Audiences */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-slate-900">Tools I've Built</h3>
-            <p className="text-slate-600">These are live routes, not placeholders. They cover the tools I actually use and the ones I built for specific workflows.</p>
+            <h3 className="text-2xl font-bold text-slate-900">Experiments</h3>
+            <p className="text-slate-600">Smaller utilities and prototypes sit here. The main project portfolio is on the Work page.</p>
 
             <div className="grid gap-4 md:grid-cols-2">
               {[

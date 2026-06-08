@@ -5,7 +5,7 @@ import { ChevronRight } from 'lucide-react';
 
 const toolCategories = [
   {
-    name: '💼 Sales & Business',
+    name: 'Sales & Business',
     tools: [
       {
         id: 'resume-scorer',
@@ -31,7 +31,7 @@ const toolCategories = [
     ],
   },
   {
-    name: '🎓 MBA & Finance Tools',
+    name: 'MBA & Finance',
     tools: [
       {
         id: 'pitch-generator',
@@ -57,7 +57,7 @@ const toolCategories = [
     ],
   },
   {
-    name: '🔒 Security & Privacy Tools',
+    name: 'Security & Privacy',
     tools: [
       {
         id: 'password-checker',
@@ -83,7 +83,7 @@ const toolCategories = [
     ],
   },
   {
-    name: '🤝 Nonprofit Impact Tools',
+    name: 'Nonprofit Impact',
     tools: [
       {
         id: 'nonprofit-budget',
@@ -109,7 +109,7 @@ const toolCategories = [
     ],
   },
   {
-    name: '🛠️ Developer Utilities',
+    name: 'Developer Utilities',
     tools: [
       {
         id: 'json-formatter',
@@ -160,16 +160,17 @@ const toolCategories = [
 export default function ToolsPage() {
   return (
     <main id="main-content" className="flex flex-col">
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 sm:py-24">
+      <section className="bg-slate-950 text-white py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-4">
             <Link href="/" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
               <ChevronRight size={18} className="rotate-180" />
               Back to Portfolio
             </Link>
-            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Tools & Utilities</h1>
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-300">Experiments</p>
+            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Smaller tools and work in progress.</h1>
             <p className="text-xl text-slate-300 max-w-2xl">
-              A collection of tools for sales, security, nonprofits, MBA applications, and development.
+              These are useful prototypes and utilities, but the main portfolio is Janus, DOOOD, ATX Services Scout, Obsidian Flow, and EMDR-BLS.
             </p>
           </div>
         </div>
@@ -190,10 +191,10 @@ export default function ToolsPage() {
                     <div>
                       <div className={`inline-block px-2 py-0.5 text-xs font-bold rounded-full mb-2 ${
                         tool.tag === 'Premium'
-                          ? 'bg-blue-100 text-blue-700'
+                          ? 'bg-amber-100 text-amber-800'
                           : 'bg-emerald-100 text-emerald-700'
                       }`}>
-                        {tool.tag}
+                        {tool.tag === 'Premium' ? 'In progress' : 'Utility'}
                       </div>
                       <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
                         {tool.title}

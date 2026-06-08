@@ -15,7 +15,7 @@ const paths = [
     title: "Work",
     href: "/work",
     kicker: "Projects",
-    text: "Janus, Obsidian Flow, ATX Services Scout, DOOOD, and the prototypes that are still useful but less central.",
+    text: "Janus, DOOOD, ATX Services Scout, Obsidian Flow, EMDR-BLS, and the experiments that sit behind them.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
   },
@@ -108,7 +108,7 @@ export default function Home() {
               <h2 className="text-3xl font-black text-slate-950">Pick a lane.</h2>
             </div>
             <p className="max-w-xl text-slate-600">
-              This site is meant to feel more like a table of contents than a resume dumped onto one page.
+              Start with the project portfolio, then use the rest of the site for background, leadership, and contact.
             </p>
           </div>
 
