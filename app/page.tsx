@@ -7,7 +7,7 @@ const paths = [
     title: "About",
     href: "/about",
     kicker: "Background",
-    text: "Dell and Uber sales, UT Austin, IE Madrid, and the slightly messy path that led to building software.",
+    text: "Dell and Uber sales, UT Austin, public-interest work, and the slightly messy path that led to building software.",
     image:
       "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
   },
@@ -95,8 +95,8 @@ export default function Home() {
               <p className="mt-1 text-sm font-semibold text-slate-600">Fluent bilingual, native Spanish speaker</p>
             </div>
             <div className="rounded-lg border border-slate-200 bg-white p-5">
-              <p className="text-3xl font-black text-slate-950">Jan 2027</p>
-              <p className="mt-1 text-sm font-semibold text-slate-600">IE dual MBA / analytics start</p>
+              <p className="text-3xl font-black text-slate-950">M.S.</p>
+              <p className="mt-1 text-sm font-semibold text-slate-600">Information Security & Privacy at UT Austin</p>
             </div>
           </div>
         </section>

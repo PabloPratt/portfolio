@@ -57,8 +57,8 @@ export default function Hero() {
               <p className="text-slate-400">Fluent bilingual, native Spanish speaker</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-blue-400">Jan 2027</p>
-              <p className="text-slate-400">IE dual MBA / analytics start</p>
+              <p className="text-3xl font-bold text-blue-400">M.S.</p>
+              <p className="text-slate-400">Information Security & Privacy at UT Austin</p>
             </div>
           </div>
         </div>

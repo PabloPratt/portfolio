@@ -8,7 +8,7 @@ export default function About() {
           <div className="space-y-4">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">About Me</h2>
             <p className="text-lg text-slate-600">
-              I'm a first-generation American, a native Spanish speaker, and a builder who learned business by working close to the customer. I started in field sales at Uber, traveling across Texas to sign new restaurants and understand what local operators actually needed. I then spent five years at Dell selling infrastructure across SLED, SMB, enterprise, telecom, and global cloud accounts. I now support Dell's largest cloud service provider and data center customers. The pattern is the same in sales and software: understand the real workflow, make the complex parts clear, and build something useful enough to survive contact with reality.
+              I'm a first-generation American, a native Spanish speaker, and a builder who learned business by working close to the customer. I started as an Account Executive at Uber, traveling across Texas to sign new restaurants and understand what local operators actually needed. I then spent five years at Dell selling infrastructure across SLED, SMB, enterprise, telecom, and global cloud accounts. I now support Dell's largest cloud service provider and data center customers. The pattern is the same in sales and software: understand the real workflow, make the complex parts clear, and build something useful enough to survive contact with reality.
             </p>
           </div>
 
@@ -61,10 +61,6 @@ export default function About() {
                   <p className="font-bold text-slate-900">The University of Texas at Austin</p>
                   <p className="text-slate-600">B.A.s in International Relations & Global Studies and Finance, with a minor in Computer Science</p>
                 </div>
-                <div className="border-l-4 border-purple-600 pl-4">
-                  <p className="font-bold text-slate-900">IE University</p>
-                  <p className="text-slate-600">Dual International MBA / M.S. in Business Analytics & Data Science, Madrid, starting January 2027</p>
-                </div>
               </div>
             </div>
 
@@ -72,8 +68,8 @@ export default function About() {
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Professional Background</h3>
               <div className="space-y-4">
                 <div className="border-l-4 border-orange-600 pl-4">
-                  <p className="font-bold text-slate-900">Uber Field Sales</p>
-                  <p className="text-slate-600">Account representative signing new restaurant partners across Texas</p>
+                  <p className="font-bold text-slate-900">Account Executive, Uber</p>
+                  <p className="text-slate-600">Signed new restaurant partners across Texas</p>
                   <p className="text-sm text-slate-500 mt-1">Learned outbound prospecting, local-market expansion, and operator-first selling by working in the field</p>
                 </div>
                 <div className="border-l-4 border-blue-600 pl-4">
@@ -129,7 +125,7 @@ export default function About() {
 
               <div className="p-4 bg-orange-50 border border-orange-200 rounded-lg">
                 <p className="font-bold text-slate-900 mb-2">Sales & Communication</p>
-                <p className="text-sm text-slate-700">Uber field sales and Dell global account work trained me to sell in the room, build trust, and translate technical value for operators, technical teams, and executives.</p>
+                <p className="text-sm text-slate-700">Uber account executive experience and Dell global account work trained me to sell in the room, build trust, and translate technical value for operators, technical teams, and executives.</p>
               </div>
 
               <div className="p-4 bg-pink-50 border border-pink-200 rounded-lg">

@@ -31,7 +31,7 @@ const toolCategories = [
     ],
   },
   {
-    name: 'MBA & Finance',
+    name: 'Business & Finance',
     tools: [
       {
         id: 'pitch-generator',

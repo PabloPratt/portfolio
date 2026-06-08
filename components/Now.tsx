@@ -19,7 +19,7 @@ export default function Now() {
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               ['Work', 'Dell cloud service providers and data center customers. The day job is still where a lot of the real pressure lives.'],
-              ['School', 'IE University dual MBA / M.S. in Business Analytics & Data Science starting January 2027. Madrid is the next chapter, not the current one.'],
+              ['Focus', 'Building portfolio projects around market intelligence, business search, writing tools, and service comparison.'],
               ['Reading', 'A selected shelf of books about leadership, power, business, history, and human behavior.'],
               ['Builds', 'Janus, Obsidian Flow, ATX Services Scout, and the portfolio itself'],
               ['Travel', 'Photos and notes from cities, road trips, and places that stay in your head. The good trips always end up with one story worth saving.'],
