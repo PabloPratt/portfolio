@@ -9,6 +9,7 @@ import {
   Search,
   ShieldCheck,
   Timer,
+  Trophy,
   Wrench,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
@@ -91,6 +92,24 @@ const projects: Project[] = [
     github: 'https://github.com/PabloPratt/atx-services-scout',
     icon: Search,
     accent: 'from-emerald-950 via-teal-800 to-lime-700',
+  },
+  {
+    title: 'Contest Finder',
+    shortName: 'AMOE',
+    kicker: 'AMOE sweepstakes finder',
+    description:
+      'World Cup promotional contest finder that surfaces sweepstakes with AMOE no-purchase entry paths, entry deadlines, prize details, and mail-in or online requirements.',
+    audience: 'People looking for legitimate no-purchase AMOE sweepstakes opportunities and clean entry instructions.',
+    build:
+      'Built with Next.js, structured contest records, filtering, AMOE verification fields, application tracking, and agent-assisted rule analysis.',
+    status: 'Live MVP',
+    dataNote:
+      'Contest rules can change, so entries should be verified against official rules before submitting anything.',
+    tags: ['Next.js', 'AMOE', 'Sweepstakes', 'Rules UX', 'Database'],
+    live: 'https://contest-finder-self.vercel.app',
+    github: 'https://github.com/PabloPratt/AMOE-Contest-Finder',
+    icon: Trophy,
+    accent: 'from-amber-950 via-orange-800 to-yellow-600',
   },
   {
     title: 'Obsidian Flow',

@@ -8,6 +8,7 @@ const PORTFOLIO_CONTEXT = `You are an AI assistant for Pablo Pratt's portfolio w
 Portfolio Information:
 - Janus: Texas business intelligence SaaS with search and registered agent service
 - DOOOD: Day One Or One Day book completion platform with blueprints, writing quests, and progress tracking
+- Contest Finder: AMOE sweepstakes finder for World Cup promotional contests, no-purchase entry paths, deadlines, prize details, and rule-guided entry instructions
 - EMDR-BLS: Bilateral stimulation therapy tool for PTSD treatment
 - Obsidian Flow: CLI trading dashboard and price screener
 - Developer Tools: JSON formatter, timestamp converter, Base64 encoder, color contrast checker, word counter, regex tester

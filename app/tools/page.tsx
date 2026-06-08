@@ -170,7 +170,7 @@ export default function ToolsPage() {
             <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-300">Experiments</p>
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Smaller tools and work in progress.</h1>
             <p className="text-xl text-slate-300 max-w-2xl">
-              These are useful prototypes and utilities, but the main portfolio is Janus, DOOOD, ATX Services Scout, Obsidian Flow, and EMDR-BLS.
+              These are useful prototypes and utilities, but the main portfolio is Janus, DOOOD, ATX Services Scout, Contest Finder, Obsidian Flow, and EMDR-BLS.
             </p>
           </div>
         </div>

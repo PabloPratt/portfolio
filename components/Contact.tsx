@@ -48,6 +48,7 @@ export default function Contact() {
             <div className="grid gap-4 md:grid-cols-2">
               {[
                 { label: 'Janus Live', href: 'https://janus-eta.vercel.app' },
+                { label: 'Contest Finder', href: 'https://contest-finder-self.vercel.app' },
                 { label: 'Obsidian Flow', href: 'https://obsidian-flow-three.vercel.app' },
                 { label: 'ATX Services Scout', href: 'https://atx-services-scout.vercel.app' },
                 { label: 'EMDR-BLS Prototype', href: 'https://emdr-bls.vercel.app' },

@@ -21,7 +21,7 @@ export default function Now() {
               ['Work', 'Dell cloud service providers and data center customers. The day job is still where a lot of the real pressure lives.'],
               ['Focus', 'Building portfolio projects around market intelligence, business search, writing tools, and service comparison.'],
               ['Reading', 'A selected shelf of books about leadership, power, business, history, and human behavior.'],
-              ['Builds', 'Janus, Obsidian Flow, ATX Services Scout, and the portfolio itself'],
+              ['Builds', 'Janus, Contest Finder, Obsidian Flow, ATX Services Scout, and the portfolio itself'],
               ['Travel', 'Photos and notes from cities, road trips, and places that stay in your head. The good trips always end up with one story worth saving.'],
               ['Personal', 'Keeping the public site honest, polished, and less like a resume. That usually means cutting whatever sounds inflated.'],
             ].map(([label, value]) => (

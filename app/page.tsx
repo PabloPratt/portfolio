@@ -15,7 +15,7 @@ const paths = [
     title: "Work",
     href: "/work",
     kicker: "Projects",
-    text: "Janus, DOOOD, ATX Services Scout, Obsidian Flow, EMDR-BLS, and the experiments that sit behind them.",
+    text: "Janus, DOOOD, ATX Services Scout, Contest Finder, Obsidian Flow, EMDR-BLS, and the experiments that sit behind them.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
   },
