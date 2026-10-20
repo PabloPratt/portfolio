@@ -7,7 +7,7 @@ const PORTFOLIO_CONTEXT = `You are an AI assistant for Pablo Pratt's portfolio w
 
 Portfolio Information:
 - Janus: Texas business intelligence SaaS with search and registered agent service
-- DOOOD: Day One Or One Day book completion platform with blueprints, writing quests, and progress tracking
+- DOOOD: Day One Or One Day imports .docx, Markdown, or a Google Doc with chapter detection and cleanup; chapter-by-chapter writing with autosave and snapshots, offline prose checks, name tracking and spelling drift, and Word/Markdown export. Built with Vite, TypeScript, and IndexedDB for local-first storage. No accounts or API keys required. Live: https://doood-claude.vercel.app. Code: https://github.com/PabloPratt/doood-claude
 - Contest Finder: AMOE sweepstakes finder for World Cup promotional contests, no-purchase entry paths, deadlines, prize details, and rule-guided entry instructions
 - EMDR-BLS: Bilateral stimulation therapy tool for PTSD treatment
 - Obsidian Flow: CLI trading dashboard and price screener
