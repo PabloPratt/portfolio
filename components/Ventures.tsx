@@ -199,7 +199,7 @@ export default function Ventures() {
               </div>
               <h3 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight">Wall Art from My Travels</h3>
               <p className="mt-3 text-sm sm:text-base leading-6 text-slate-600">
-                Photos I&apos;ve taken from Patagonia to the Scottish Highlands, sold as canvas, metal and framed prints. Print on demand means each piece is printed and shipped only when someone orders it, so there&apos;s no warehouse and nothing goes to waste.
+                Nature photos I&apos;ve taken from Patagonia&apos;s glaciers to the Scottish Highlands, sold as canvas, metal and framed prints. Print on demand means each piece is printed and shipped only when someone orders it, so there&apos;s no warehouse and nothing goes to waste.
               </p>
             </div>
             <a
@@ -219,7 +219,7 @@ export default function Ventures() {
               { src: '/prints/machu-picchu.jpg', place: 'Machu Picchu, Peru' },
               { src: '/prints/scottish-highlands.jpg', place: 'Scottish Highlands' },
               { src: '/prints/cabo.jpg', place: 'Cabo San Lucas, Mexico' },
-              { src: '/prints/edinburgh-2.jpg', place: 'Edinburgh Castle, Scotland' },
+              { src: '/prints/puerto-vallarta.jpg', place: 'Sunset over Banderas Bay, Puerto Vallarta' },
             ].map((photo) => (
               <figure key={photo.src} className="group overflow-hidden rounded-lg border border-slate-200 bg-white">
                 <div className="aspect-[4/3] overflow-hidden">
