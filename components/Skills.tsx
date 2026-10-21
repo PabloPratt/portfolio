@@ -36,6 +36,18 @@ export default function Skills() {
       category: '🔌 Integrations & APIs',
       skills: ['Anthropic Claude API', 'Stripe Payments', 'Clerk Auth', 'Supabase', 'UnusualWhales API', 'Vercel', 'GitHub'],
     },
+    {
+      category: '🚗 Automotive Diagnostics & Telemetry',
+      skills: ['OBD-II & CAN Bus Architecture', 'FORScan PID Logging & Analysis', 'BCM FET Circuit Breaker Reset', 'Texas DPS I/M Readiness Standards', 'python-OBD & ELM327 Protocols', 'Predictive Failure Modeling'],
+    },
+    {
+      category: '📡 Hardware, IoT & RF Sentry',
+      skills: ['BLE Tracker Classification (AirTag/Tile)', 'Passive Wi-Fi CSI Movement Sensing', 'Vizio SmartCast API & CEC Automation', 'Bambu Lab 3D Printer MQTT Telemetry', 'LAN Packet Correlation (Kali Linux)'],
+    },
+    {
+      category: '🧠 Local AI & Edge Compute',
+      skills: ['Local Ollama Runtime (14B Models)', 'DeepSeek-R1 & Qwen2.5-Coder', 'Zero-Cloud Offline Inferences', 'Multi-Agent Beast Architecture', 'Tailscale Mesh Networking'],
+    },
   ];
 
   return (
