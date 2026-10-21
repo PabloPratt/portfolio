@@ -23,7 +23,7 @@ const paths = [
     title: "Ventures",
     href: "/about#ventures",
     kicker: "Commerce & Services",
-    text: "Bot-powered deal flipping, automated futures trading, custom 3D printing, fresh microgreens for local restaurants, and affordable custom websites for small businesses.",
+    text: "Bot-powered deal flipping, automated futures trading, travel-photo wall art, custom 3D printing, fresh microgreens for local restaurants, and affordable custom websites for small businesses.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
   },

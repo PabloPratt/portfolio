@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Bot, Check, Globe, Mail, Printer, ShoppingBag, Sparkles, Sprout, TrendingUp } from 'lucide-react';
+import { ArrowRight, Bot, Check, Globe, Image as ImageIcon, Mail, Printer, ShoppingBag, Sparkles, Sprout, TrendingUp } from 'lucide-react';
 
 export default function Ventures() {
   return (
@@ -15,7 +15,7 @@ export default function Ventures() {
             Hands-on businesses built on honest value.
           </h2>
           <p className="mt-4 text-lg leading-8 text-slate-600">
-            Beyond writing software, I run small, tangible businesses grounded in everyday economics: catching underpriced deals, running automated trading, manufacturing physical parts, growing fresh food, and building websites for local operators. No buzzwords—just clear work that solves real needs.
+            Beyond writing software, I run small, tangible businesses grounded in everyday economics: catching underpriced deals, running automated trading, selling travel photography as wall art, manufacturing physical parts, growing fresh food, and building websites for local operators. No buzzwords—just clear work that solves real needs.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default function Ventures() {
               <div className="mt-4 space-y-2 text-xs text-slate-600 bg-white rounded-lg p-3.5 border border-slate-200">
                 <p className="font-bold text-slate-900">How it works in plain words:</p>
                 <p>
-                  Sometimes a store marks something down to pennies or types the wrong price, and it only lasts until someone notices. Our bots and scrapers watch store listings around the clock, spot those prices the moment they appear, and buy from a dedicated deal fund before the price gets fixed. Then we resell at the normal market price.
+                  Sometimes a store marks something down to pennies or types the wrong price, and it only lasts until someone notices. Our bots and scrapers watch store listings around the clock and flag those prices the moment they appear, checking each one against what the item actually sells for. We approve the best ones, buy from a dedicated deal fund before the price gets fixed, and resell at the normal market price.
                 </p>
               </div>
             </div>
@@ -183,6 +183,65 @@ export default function Ventures() {
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Print on Demand: wall art gallery */}
+        <div className="rounded-xl border border-slate-200 bg-stone-50/50 p-6 sm:p-8 shadow-sm">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-rose-500/10 text-rose-700 border border-rose-500/20">
+                  <ImageIcon size={24} />
+                </div>
+                <span className="rounded-full bg-rose-100/70 px-2.5 py-0.5 text-xs font-bold text-rose-800">
+                  Print on Demand
+                </span>
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight">Wall Art from My Travels</h3>
+              <p className="mt-3 text-sm sm:text-base leading-6 text-slate-600">
+                Photos I&apos;ve taken from Patagonia to the Scottish Highlands, sold as canvas, metal and framed prints. Print on demand means each piece is printed and shipped only when someone orders it, so there&apos;s no warehouse and nothing goes to waste.
+              </p>
+            </div>
+            <a
+              href="https://fineartamerica.com/profiles/pablo-pratt"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-slate-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-slate-800 shadow-md shrink-0"
+            >
+              Shop the prints <ArrowRight size={16} />
+            </a>
+          </div>
+
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
+            {[
+              { src: '/prints/zion.jpg', place: 'Zion National Park, Utah' },
+              { src: '/prints/perito-moreno.jpg', place: 'Perito Moreno Glacier, Argentina' },
+              { src: '/prints/machu-picchu.jpg', place: 'Machu Picchu, Peru' },
+              { src: '/prints/scottish-highlands.jpg', place: 'Scottish Highlands' },
+              { src: '/prints/cabo.jpg', place: 'Cabo San Lucas, Mexico' },
+              { src: '/prints/edinburgh-2.jpg', place: 'Edinburgh Castle, Scotland' },
+            ].map((photo) => (
+              <figure key={photo.src} className="group overflow-hidden rounded-lg border border-slate-200 bg-white">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={photo.src}
+                    alt={photo.place}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <figcaption className="px-3 py-2 text-xs font-semibold text-slate-600">{photo.place}</figcaption>
+              </figure>
+            ))}
+          </div>
+
+          <p className="mt-4 text-xs text-slate-500">
+            Also on Redbubble. Want a specific photo, size or a custom piece?{' '}
+            <a href="mailto:pablo.a.pratt@gmail.com?subject=Wall%20Art%20Print" className="font-bold text-slate-900 underline underline-offset-2">
+              Email me
+            </a>
+            .
+          </p>
         </div>
 
         {/* Venture 5: Custom Websites with 3 Pricing Tiers */}
