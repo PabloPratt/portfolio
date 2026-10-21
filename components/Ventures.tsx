@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Check, Globe, Mail, Package, Printer, ShoppingBag, Sparkles, Sprout } from 'lucide-react';
+import { ArrowRight, Bot, Check, Globe, Mail, Printer, ShoppingBag, Sparkles, Sprout, TrendingUp } from 'lucide-react';
 
 export default function Ventures() {
   return (
@@ -15,12 +15,12 @@ export default function Ventures() {
             Hands-on businesses built on honest value.
           </h2>
           <p className="mt-4 text-lg leading-8 text-slate-600">
-            Beyond writing software, I run small, tangible businesses grounded in everyday economics: sourcing undervalued goods, manufacturing physical parts, growing fresh food, and building websites for local operators. No buzzwords—just clear work that solves real needs.
+            Beyond writing software, I run small, tangible businesses grounded in everyday economics: catching underpriced deals, running automated trading, manufacturing physical parts, growing fresh food, and building websites for local operators. No buzzwords—just clear work that solves real needs.
           </p>
         </div>
 
-        {/* Top 3 Venture Cards */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {/* Venture Cards */}
+        <div className="grid gap-6 md:grid-cols-2">
           {/* Venture 1: Flipping & Reselling */}
           <div className="flex flex-col justify-between rounded-xl border border-slate-200 bg-stone-50/50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
             <div>
@@ -35,17 +35,17 @@ export default function Ventures() {
 
               <h3 className="text-xl font-black text-slate-950">Flipping & Reselling</h3>
               <p className="mt-1 text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                Estate Sales • Garage Sales • Surplus
+                Surplus Stores • Penny Deals • Pricing Errors
               </p>
 
               <p className="mt-4 text-sm leading-6 text-slate-600">
-                We buy undervalued items from estate sales, neighborhood garage sales, and government surplus auctions, then resell them on eBay and other online marketplaces.
+                We buy underpriced stock from surplus stores, clearance &ldquo;penny&rdquo; deals, and retailer pricing mistakes, then resell it on eBay and other online marketplaces.
               </p>
 
               <div className="mt-4 space-y-2 text-xs text-slate-600 bg-white rounded-lg p-3.5 border border-slate-200">
                 <p className="font-bold text-slate-900">How it works in plain words:</p>
                 <p>
-                  Sellers often want to clear space fast, so they price items well below what they are worth. We inspect each item in person, verify condition, clean and test it, take clear photos, and connect it with an online buyer actively searching for that exact piece.
+                  Sometimes a store marks something down to pennies or types the wrong price, and it only lasts until someone notices. Our bots and scrapers watch store listings around the clock, spot those prices the moment they appear, and buy from a dedicated deal fund before the price gets fixed. Then we resell at the normal market price.
                 </p>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function Ventures() {
             <div className="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
               <span className="font-semibold">Primary platform: eBay</span>
               <span className="inline-flex items-center gap-1 font-bold text-amber-800">
-                <Package size={14} /> Verified condition
+                <Bot size={14} /> Bots on watch 24/7
               </span>
             </div>
           </div>
@@ -146,9 +146,46 @@ export default function Ventures() {
               </a>
             </div>
           </div>
+
+          {/* Venture 4: Automated Trading */}
+          <div className="flex flex-col justify-between rounded-xl border border-slate-200 bg-stone-50/50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <div>
+              <div className="flex items-center justify-between gap-2 mb-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-violet-500/10 text-violet-700 border border-violet-500/20">
+                  <TrendingUp size={24} />
+                </div>
+                <span className="rounded-full bg-violet-100/70 px-2.5 py-0.5 text-xs font-bold text-violet-800">
+                  Trading
+                </span>
+              </div>
+
+              <h3 className="text-xl font-black text-slate-950">Automated Futures Trading</h3>
+              <p className="mt-1 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                Paradox Algo • Shifu • Prop Firm Capital
+              </p>
+
+              <p className="mt-4 text-sm leading-6 text-slate-600">
+                We trade stock-index and gold futures with computer-run strategies instead of gut feeling, using a prop firm&apos;s capital rather than our own.
+              </p>
+
+              <div className="mt-4 space-y-2 text-xs text-slate-600 bg-white rounded-lg p-3.5 border border-slate-200">
+                <p className="font-bold text-slate-900">How it works in plain words:</p>
+                <p>
+                  Paradox Algo strategies watch the chart and decide when to buy or sell. Shifu passes each signal to the broker in under a second, and every trade goes in with its stop-loss already set. Daily loss limits shut things off automatically, so fear and greed never get a vote.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+              <span className="font-semibold">Risk caps enforced automatically</span>
+              <a href="/work" className="inline-flex items-center gap-1 font-bold text-violet-800 hover:text-violet-950">
+                Details <ArrowRight size={14} />
+              </a>
+            </div>
+          </div>
         </div>
 
-        {/* Venture 4: Custom Websites with 3 Pricing Tiers */}
+        {/* Venture 5: Custom Websites with 3 Pricing Tiers */}
         <div className="rounded-2xl border border-slate-200 bg-gradient-to-br from-stone-50 via-white to-slate-50 p-6 sm:p-10 shadow-sm space-y-8">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
             <div className="max-w-2xl">
