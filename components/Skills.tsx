@@ -21,8 +21,8 @@ export default function Skills() {
       skills: ['Financial Data APIs', 'SEC EDGAR', 'Alternative Data Sources', 'Market Data Pipelines', 'API Integration', 'Data Normalization', 'Dashboarding'],
     },
     {
-      category: '🌍 Sales & Leadership',
-      skills: ['Enterprise Sales (Dell)', '237% Quota Attainment', '146% Attainment for 3 Quarters', 'B2B Sales Strategy', 'C-suite Communication', 'Global Markets', 'ERG Leadership'],
+      category: '🌍 Sales & Audience Growth',
+      skills: ['Enterprise Sales (Dell)', '237% Quota Attainment', 'Audience Growth (23.7M+ Views Across 3 Channels)', 'Strategic Account Growth & Management Handover', '146% Attainment for 3 Quarters', 'B2B Sales Strategy', 'C-suite Communication', 'Global Markets', 'ERG Leadership'],
     },
     {
       category: '🤝 Social Impact',
@@ -76,10 +76,14 @@ export default function Skills() {
           </div>
 
           {/* Highlights */}
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4 pt-8 border-t border-slate-200">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5 pt-8 border-t border-slate-200">
             <div className="space-y-2">
               <p className="text-3xl font-bold text-blue-600">237%</p>
               <p className="text-slate-600">Peak quota attainment at Dell</p>
+            </div>
+            <div className="space-y-2">
+              <p className="text-3xl font-bold text-blue-600">23.7M+</p>
+              <p className="text-slate-600">Organic views scaled across 3 accounts built over 1.5 years prior to handover</p>
             </div>
             <div className="space-y-2">
               <p className="text-3xl font-bold text-blue-600">7.5K+</p>

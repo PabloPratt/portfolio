@@ -1,847 +1,379 @@
 import Link from 'next/link';
-
 import {
-
   ArrowRight,
-
   BookOpen,
-
   BrainCircuit,
   Car,
-  LayoutGrid,
-
   Database,
-
   ExternalLink,
-
   LineChart,
-
+  Lock,
   Radio,
-
   Search,
-
   ShieldAlert,
-
   ShieldCheck,
-
-  Timer,
-
-  Trophy,
-
+  Sparkles,
+  TrendingUp,
   Wallet,
-
   Wrench,
-
 } from 'lucide-react';
-
 import type { LucideIcon } from 'lucide-react';
 
-
-
 function GithubIcon({ size = 18 }: { size?: number }) {
-
   return (
-
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-
       <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.66-.31-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.05.13 3.01.4c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.69.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-
     </svg>
-
   );
-
 }
 
-
-
 type Project = {
-
   title: string;
-
   shortName: string;
-
   kicker: string;
-
   description: string;
-
+  feynman: string;
+  modules?: string[];
   audience: string;
-
   build: string;
-
   status: string;
-
-  dataNote?: string;
-
   tags: string[];
-
   live: string;
-
-  github: string;
-
+  github?: string;
   icon: LucideIcon;
-
   accent: string;
-
 };
-
-
 
 type Experiment = {
-
   title: string;
-
   description: string;
-
   href: string;
-
 };
-
-
 
 const projects: Project[] = [
   {
-    title: 'Projects Hub & Fleet Control',
-    shortName: 'HUB',
-    kicker: 'Unified master ecosystem',
+    title: 'Argus Cyber Intelligence',
+    shortName: 'ARGUS',
+    kicker: 'Unified digital sentry',
     description:
-      'Single mission-control portal indexing 26+ live production applications across cybersecurity intelligence, quantitative trading, automotive telemetry, local offline AI, and civic utilities with sub-second filtering and live HTTP health probes.',
-    audience: 'Stakeholders, enterprise collaborators, and fleet operators navigating the full production ecosystem.',
-    build:
-      'Zero-dependency static CDN architecture, responsive dark-glass UI, real-time client search index, and automated deployment probing.',
-    status: 'Live Master Hub',
-    tags: ['Master Hub', 'Fleet Control', 'Live Health Probes', 'Tailscale Bridge', '26+ Apps'],
-    live: 'https://pablo-projects-hub.vercel.app',
-    github: 'https://github.com/PabloPratt/hub',
-    icon: LayoutGrid,
-    accent: 'from-blue-950 via-indigo-900 to-cyan-700',
+      'An all-in-one cybersecurity operations console that protects people and businesses from digital threats across multiple domains.',
+    feynman:
+      `Think of Argus as an automated digital security guard. Instead of jumping between five different tools, it monitors everything in one window: it identifies unrepresented local businesses that need websites, sniffs out unwanted Bluetooth tracking tags (like hidden AirTags), verifies incoming phone calls against caller-ID spoofing scams, and flags abnormal home network traffic—all using local offline AI that never transmits your private data to the cloud.`,
+    modules: [
+      'Lead Recon (B2B Municipal Discovery)',
+      'GhostSentry (BLE Anti-Stalking Radar)',
+      'Mobile Threat Observatory (Telephony SOC & STIR/SHAKEN)',
+      'CitizenShield (Consumer Safety Defense)',
+      'IndustryGuard (Critical Infra Threat Feeds)',
+      'MotorMind (Vehicle Telemetry Sentry)',
+    ],
+    audience: 'Security analysts, investigators, business owners, and privacy-conscious operators.',
+    build: 'Next.js 15, TypeScript, Tailwind CSS, Jest (32 tests), STIR/SHAKEN crypto engine, and local GPU Ollama inference.',
+    status: 'Live Platform',
+    tags: ['Cybersecurity', 'STIR/SHAKEN', 'BLE Radar', 'Local AI', 'Full Stack'],
+    live: 'https://argus-delta-seven.vercel.app',
+    github: 'https://github.com/PabloPratt/argus',
+    icon: ShieldAlert,
+    accent: 'from-slate-950 via-blue-950 to-indigo-900',
   },
   {
     title: 'MotorMind',
     shortName: 'MOTO',
-    kicker: 'Automotive telemetry & predictive AI',
+    kicker: 'Universal vehicle health & diagnostics',
     description:
-      'Production-grade vehicle diagnostic and predictive maintenance platform with live OBD-II telemetry replay, Texas DPS inspection readiness monitors, interactive FORScan BCM FET circuit breaker reset simulator, and an evidence-based F-150 electrical wizard.',
-    audience: 'Vehicle owners and fleet operators seeking dealership-grade diagnostics, DIY repair guidance, and cost transparency.',
-    build:
-      'Next.js 16, TypeScript, Tailwind CSS, Vitest (31 passing tests), FORScan CSV parser, and python-OBD / ELM327 hardware bridge.',
+      'A smart, honest mechanic in your pocket for any car or truck that translates confusing sensor codes into plain English.',
+    feynman:
+      `When your car's "Check Engine" light turns on, mechanics often charge $150 just to read the code and quote expensive repairs you might not even need. MotorMind connects to any vehicle's standard diagnostic port to read the real raw data. It explains exactly what is happening in simple everyday words, tells you whether it's safe to keep driving, estimates fair parts and labor costs, and gives you clear DIY repair steps so you never get taken advantage of at the repair shop.`,
+    audience: 'Any car or truck owner who wants honest diagnostic answers, fair repair estimates, and DIY confidence.',
+    build: 'Next.js 16, TypeScript, Tailwind CSS, Vitest (31 tests), live OBD-II telemetry parser, and state inspection readiness analyzer.',
     status: 'Live Platform',
-    tags: ['Next.js 16', 'Automotive Telemetry', 'OBD-II / CAN', 'Texas DPS I/M', 'FORScan Replay', 'Vitest'],
+    tags: ['Vehicle Diagnostics', 'OBD-II / CAN', 'Predictive Maintenance', 'DIY Repair', 'Cost Transparency'],
     live: 'https://argus-delta-seven.vercel.app/motormind',
     github: 'https://github.com/PabloPratt/argus',
     icon: Car,
-    accent: 'from-amber-950 via-orange-900 to-red-800',
+    accent: 'from-amber-950 via-orange-950 to-red-900',
   },
   {
-    title: 'Argus Cyber Intelligence',
-    shortName: 'ARGUS',
-    kicker: 'Unified multi-domain sentry',
+    title: 'Shifu & Paradox Algo',
+    shortName: 'SHIFU',
+    kicker: 'Algorithmic trading & prop execution',
     description:
-      'Unified cybersecurity intelligence console integrating municipal Lead Recon, GhostSentry BLE tracker classification, Mobile Threat Observatory (MTO) telephony SOC, CitizenShield, and IndustryGuard into one hardened operations plane with local Ollama DeepSeek-R1 inference.',
-    audience: 'Security operations teams, field analysts, and municipal investigators requiring cross-domain threat correlation.',
-    build:
-      'Next.js 15, TypeScript, Tailwind CSS, Jest (32 passing tests), STIR/SHAKEN PASSporT parser, and local Ollama GPU inference.',
-    status: 'Live Platform',
-    tags: ['Next.js 15', 'Cyber Intelligence', 'BLE Sentry', 'STIR/SHAKEN', 'Ollama R1', 'Jest'],
-    live: 'https://argus-delta-seven.vercel.app',
-    github: 'https://github.com/PabloPratt/argus',
-    icon: ShieldAlert,
-    accent: 'from-slate-950 via-blue-950 to-indigo-800',
+      'Automated trading execution platform and proprietary indicator suite co-developed for futures and options traders.',
+    feynman:
+      `Most traders lose money because of human emotion—fear, greed, and hesitating at critical moments. Shifu and Paradox Algo automate disciplined trading strategies. They analyze real-time market structure on the chart and send automated buy/sell orders directly to prop firm accounts (like Tradeify, Apex, and Topstep). The system enforces strict daily loss limits and trailing drawdowns automatically, so trades are executed with machine discipline and zero hesitation.`,
+    audience: 'Futures and options traders managing funded prop firm accounts who require disciplined, automated execution.',
+    build: 'TradingView Pine Script indicators, high-speed webhook execution bridge, Tradovate API, and live PnL risk-capping engine.',
+    status: 'Production Platforms',
+    tags: ['Algorithmic Trading', 'Futures & Options', 'Prop Firm Automation', 'Tradovate API', 'Pine Script'],
+    live: 'https://shifu.trade/dashboard',
+    icon: TrendingUp,
+    accent: 'from-emerald-950 via-teal-950 to-cyan-900',
   },
   {
-    title: 'Argus Home & IoT Sentry',
-    shortName: 'HOME',
-    kicker: 'LAN sentry & device intelligence',
-    description:
-      'Local network intelligence and IoT command center featuring automated device fingerprinting, Vizio SmartCast CEC automation, passive Wi-Fi motion detection, and LAN MQTT integration with WALL-E 3D print operations.',
-    audience: 'Smart home administrators seeking private, local-first IoT control and ambient physical presence awareness.',
-    build:
-      'FastAPI, Python 3.12, SQLite, Pytest (60 passing tests), Vizio SmartCast API, and Bambu Lab MQTT.',
-    status: 'Local Daemon',
-    tags: ['Python 3.12', 'FastAPI', 'IoT Sentry', 'Wi-Fi Sensing', 'MQTT', 'Pytest'],
-    live: 'https://pablo-projects-hub.vercel.app',
-    github: 'https://github.com/PabloPratt/argus-home',
-    icon: Radio,
-    accent: 'from-cyan-950 via-teal-950 to-emerald-800',
-  },
-
-  {
-
-    title: 'Mobile Threat Observatory',
-
-    shortName: 'MTO',
-
-    kicker: 'Telephony & Mobile SOC',
-
-    description:
-
-      'Enterprise mobile call-intelligence & telephony SOC dashboard with STIR/SHAKEN PASSporT cryptographic token inspection, explainable multi-factor risk engine, Kali PCAP SIP/STUN packet correlation, and live ADB Google Pixel 10 Pro telemetry extraction.',
-
-    audience: 'Cybersecurity analysts, fraud investigation teams, and telecom compliance officers.',
-
-    build:
-
-      'Next.js 15, TypeScript, Tailwind CSS, Vitest (12 passing tests), Supabase Auth/Postgres RLS, and Kali Linux PCAP processing.',
-
-    status: 'Live SOC Demo',
-
-    tags: ['Next.js 15', 'TypeScript', 'STIR/SHAKEN', 'Kali PCAP', 'ADB Telemetry', 'Supabase'],
-
-    live: 'https://web-sable-zeta-57.vercel.app',
-
-    github: 'https://github.com/PabloPratt/mobile-threat-observatory',
-
-    icon: ShieldAlert,
-
-    accent: 'from-rose-950 via-red-900 to-amber-700',
-
-  },
-
-  {
-
-    title: 'AUTONOMY',
-
-    shortName: 'AUTO',
-
-    kicker: 'Household finance command center',
-
-    description:
-
-      'Full household finance platform with dated paycheck allocation, debt avalanche and snowball payoff sequencing, savings targets, and Supabase RLS security isolation.',
-
-    audience: 'Households and individuals seeking structured, deterministic cash flow and debt management.',
-
-    build:
-
-      'Node.js, Supabase Auth/Postgres, Edge Functions, automated session recovery, and Playwright verification.',
-
-    status: 'Live Platform',
-
-    tags: ['Supabase', 'Postgres RLS', 'Edge Functions', 'Playwright', 'Financial Engine'],
-
-    live: 'https://autonomy-wheat.vercel.app',
-
-    github: 'https://github.com/PabloPratt/autonomy',
-
-    icon: Wallet,
-
-    accent: 'from-emerald-950 via-teal-900 to-cyan-700',
-
-  },
-
-  {
-
-    title: 'Four-Domain IQ Test',
-
-    shortName: 'IQ',
-
-    kicker: 'Psychometrics & cognitive assessment',
-
-    description:
-
-      '40-item browser-based psychometric test scored using Item Response Theory (IRT) measuring verbal reasoning, numerical proficiency, spatial logic, and pattern completion.',
-
-    audience: 'Learners and professionals testing analytical reasoning across four cognitive dimensions.',
-
-    build:
-
-      'TypeScript, Item Response Theory (IRT) two-parameter logistic model, responsive assessment UI, and item analysis.',
-
-    status: 'Live Assessment',
-
-    tags: ['TypeScript', 'Psychometrics', 'IRT Scoring', 'Tailwind CSS'],
-
-    live: 'https://iq-test-six.vercel.app',
-
-    github: 'https://github.com/PabloPratt/iq-test',
-
-    icon: BrainCircuit,
-
-    accent: 'from-purple-950 via-indigo-900 to-blue-700',
-
-  },
-
-  {
-
-    title: 'Before You Get Cancelled',
-
-    shortName: 'BYGC',
-
-    kicker: 'Client-side privacy scanner',
-
-    description:
-
-      'Scan your own personal X/Twitter archive for sensitive keywords, sentiment drift, and high-risk historical posts. Runs 100% in the browser with zero cloud uploads.',
-
-    audience: 'Public figures, executives, and users reviewing historical social media exposure.',
-
-    build:
-
-      'Vanilla HTML5 and JS with client-side ZIP stream parsing and regex pattern matching.',
-
-    status: 'Live Privacy Tool',
-
-    tags: ['Privacy', 'Client-side', 'ZIP Parsing', 'Security'],
-
-    live: 'https://before-you-get-cancelled.vercel.app',
-
-    github: 'https://github.com/PabloPratt/before-you-get-cancelled',
-
-    icon: ShieldCheck,
-
-    accent: 'from-amber-950 via-red-950 to-stone-800',
-
-  },
-
-  {
-
     title: 'Janus',
-
     shortName: 'JA',
-
-    kicker: 'Texas business intelligence',
-
+    kicker: 'Texas business intelligence directory',
     description:
-
-      'Business search and lead intelligence for Texas companies, including ZIP, city, county, registered agent, and privacy-focused workflow support.',
-
-    audience: 'Founders, operators, and sales teams researching Texas businesses.',
-
-    build:
-
-      'Built with Next.js, TypeScript, Clerk, Stripe, and Supabase around a multi-million-record business dataset.',
-
+      'Lightning-fast search and lead intelligence across millions of official Texas state business registrations.',
+    feynman:
+      `Finding real, active companies in Texas used to mean digging through slow government databases. Janus indexes millions of official state comptroller filings into a clean, modern search engine. Sales reps, recruiters, and founders can filter businesses by city, ZIP code, industry, and registration date to find newly formed LLCs and verified decision-maker details in seconds.`,
+    audience: 'Sales teams, founders, legal researchers, and local operators sourcing Texas B2B leads.',
+    build: 'Next.js, TypeScript, Clerk Authentication, Stripe Billing, and Supabase PostgreSQL indexing millions of public records.',
     status: 'Live SaaS',
-
-    tags: ['Next.js', 'TypeScript', 'Supabase', 'Clerk', 'Stripe'],
-
+    tags: ['Next.js', 'PostgreSQL', 'Public Records', 'Clerk Auth', 'Stripe'],
     live: 'https://janus-eta.vercel.app',
-
     github: 'https://github.com/PabloPratt/Janus',
-
     icon: Database,
-
-    accent: 'from-sky-900 via-blue-800 to-cyan-700',
-
+    accent: 'from-sky-950 via-blue-900 to-indigo-800',
   },
-
   {
-
+    title: 'AUTONOMY',
+    shortName: 'AUTO',
+    kicker: 'Household financial command center',
+    description:
+      'A structured, deterministic financial planner that allocates every paycheck to clear debt and build savings.',
+    feynman:
+      `Most budgeting apps only tell you what you already spent after the money is gone. AUTONOMY works forward: the moment a paycheck arrives, it assigns every single dollar to upcoming bills, safety margins, and high-interest debt payoffs using mathematically optimal snowball and avalanche payoff schedules. It removes financial guesswork and isolates user data with enterprise-grade row-level security.`,
+    audience: 'Households and individuals seeking structured, zero-anxiety debt elimination and predictable cash flow.',
+    build: 'Node.js, Supabase PostgreSQL with strict Row Level Security (RLS), Edge Functions, and automated session recovery.',
+    status: 'Live Platform',
+    tags: ['Household Finance', 'Supabase RLS', 'Debt Avalanche', 'Edge Functions', 'Cash Flow Engine'],
+    live: 'https://autonomy-wheat.vercel.app',
+    github: 'https://github.com/PabloPratt/autonomy',
+    icon: Wallet,
+    accent: 'from-emerald-950 via-green-900 to-teal-800',
+  },
+  {
+    title: 'Loki',
+    shortName: 'LOKI',
+    kicker: 'Zero-cloud digital footprint scanner',
+    description:
+      'A 100% private in-browser scanner that audits your historical social media posts for sensitive keywords and data exposure.',
+    feynman:
+      `People have years of old posts on social media that might contain forgotten personal details, phone numbers, or outdated comments. Most auditing tools ask you to upload your data to their cloud servers—which defeats the purpose of privacy. Loki runs entirely inside your own browser. You drop in your personal archive ZIP file, and your browser unpacks and scans it locally on your computer. Zero bytes ever leave your device.`,
+    audience: 'Professionals, public figures, and privacy-conscious users auditing their personal historical footprint.',
+    build: 'Vanilla HTML5 and JavaScript with client-side ZIP stream parsing, regex pattern matching, and zero cloud uploads.',
+    status: 'Live Privacy Tool',
+    tags: ['Privacy', 'Client-side', 'Zero-Cloud', 'Security Audit', 'Archive Parser'],
+    live: 'https://before-you-get-cancelled.vercel.app',
+    github: 'https://github.com/PabloPratt/before-you-get-cancelled',
+    icon: Lock,
+    accent: 'from-stone-950 via-amber-950 to-neutral-900',
+  },
+  {
     title: 'DOOOD',
-
     shortName: 'DO',
-
-    kicker: 'Book completion platform',
-
+    kicker: 'Distraction-free book completion tool',
     description:
-
-      'Day One Or One Day imports .docx, Markdown, or a Google Doc with chapter detection and cleanup, then supports chapter-by-chapter writing with autosave and snapshots.',
-
-    audience: 'Authors who have started a book and need structure to finish it.',
-
-    build:
-
-      'IndexedDB local-first storage, offline prose checks, name tracking and spelling drift, and Word or Markdown export. No accounts or API keys required.',
-
-    status: 'Live MVP',
-
-    tags: ['Vite', 'TypeScript', 'IndexedDB', 'Local-first'],
-
+      'A structured writing workspace that breaks rough drafts into milestones and keeps authors moving forward.',
+    feynman:
+      `Starting a book is easy; finishing one is where most writers get stuck. DOOOD (Day One Or One Day) takes your rough manuscript, automatically detects chapters, flags character name spelling inconsistencies, and creates a realistic chapter-by-chapter roadmap. Everything autosaves directly into your browser's local storage with snapshot rollbacks, so you can write offline with total privacy.`,
+    audience: 'Authors, novelists, and non-fiction writers who need structural accountability to finish their manuscript.',
+    build: 'Vite, TypeScript, IndexedDB local-first storage, offline consistency checkers, and Word (.docx) / Markdown exports.',
+    status: 'Live Tool',
+    tags: ['Authoring', 'IndexedDB', 'Local-first', 'Writing UX', 'Markdown Export'],
     live: 'https://doood-claude.vercel.app',
-
     github: 'https://github.com/PabloPratt/doood-claude',
-
     icon: BookOpen,
-
-    accent: 'from-zinc-950 via-stone-800 to-amber-700',
-
+    accent: 'from-zinc-950 via-stone-900 to-amber-900',
   },
-
-  {
-
-    title: 'ATX Services Scout',
-
-    shortName: 'ATX',
-
-    kicker: 'Austin services comparison',
-
-    description:
-
-      'Comparison app for mechanics, cleaners, lawn care, plumbers, and electricians, with public price tracking, quote-required flags, and manual research workflows.',
-
-    audience: 'Austin residents comparing everyday service providers without paid data feeds.',
-
-    build:
-
-      'Built around transparent source notes, local service categories, search filters, and a path to Supabase-backed provider data.',
-
-    status: 'Live MVP',
-
-    tags: ['Vercel', 'Search UX', 'Manual Data', 'Local Services'],
-
-    live: 'https://atx-services-scout.vercel.app',
-
-    github: 'https://github.com/PabloPratt/atx-services-scout',
-
-    icon: Search,
-
-    accent: 'from-emerald-950 via-teal-800 to-lime-700',
-
-  },
-
-  {
-
-    title: 'Contest Finder',
-
-    shortName: 'AMOE',
-
-    kicker: 'AMOE sweepstakes finder',
-
-    description:
-
-      'World Cup promotional contest finder that surfaces sweepstakes with AMOE no-purchase entry paths, entry deadlines, prize details, and mail-in or online requirements.',
-
-    audience: 'People looking for legitimate no-purchase AMOE sweepstakes opportunities and clean entry instructions.',
-
-    build:
-
-      'Built with Next.js, structured contest records, filtering, AMOE verification fields, application tracking, and agent-assisted rule analysis.',
-
-    status: 'Live MVP',
-
-    dataNote:
-
-      'Contest rules can change, so entries should be verified against official rules before submitting anything.',
-
-    tags: ['Next.js', 'AMOE', 'Sweepstakes', 'Rules UX', 'Database'],
-
-    live: 'https://contest-finder-self.vercel.app',
-
-    github: 'https://github.com/PabloPratt/AMOE-Contest-Finder',
-
-    icon: Trophy,
-
-    accent: 'from-amber-950 via-orange-800 to-yellow-600',
-
-  },
-
-  {
-
-    title: 'Obsidian Flow',
-
-    shortName: 'OF',
-
-    kicker: 'Options trading lab',
-
-    description:
-
-      'Options trading dashboard for scanning contracts, tracking spotlight picks, and comparing market signals in an options-first workspace.',
-
-    audience: 'Personal options traders who want a focused scanner and accountability layer.',
-
-    build:
-
-      'Prototype terminal with watchlists, filters, staged orders, spotlight tracking, provider status, and streaming-ready architecture.',
-
-    status: 'Prototype',
-
-    dataNote:
-
-      'Currently uses no-key prototype data with a path toward OPRA-backed feeds through Alpaca, Tradier, Massive/Polygon, or Unusual Whales.',
-
-    tags: ['Options', 'Trading UI', 'Yahoo Fallback', 'Provider Ready'],
-
-    live: 'https://obsidian-flow-lab.vercel.app',
-
-    github: 'https://github.com/PabloPratt/obsidian-flow',
-
-    icon: LineChart,
-
-    accent: 'from-neutral-950 via-red-950 to-amber-700',
-
-  },
-
-  {
-
-    title: 'EMDR-BLS',
-
-    shortName: 'BLS',
-
-    kicker: 'Bilateral stimulation tool',
-
-    description:
-
-      'Browser-based bilateral stimulation tool with moving visual targets, pacing controls, audio cues, session timing, and multiple visual modes.',
-
-    audience: 'People who need a configurable bilateral stimulation timer and visual pacing tool.',
-
-    build:
-
-      'Built with React, Web Audio, Canvas-style motion patterns, accessible controls, and session configuration.',
-
-    status: 'Live tool',
-
-    tags: ['React', 'Web Audio', 'Motion UI', 'Accessibility'],
-
-    live: 'https://emdr-bls.vercel.app',
-
-    github: 'https://github.com/PabloPratt/emdr-bls',
-
-    icon: Timer,
-
-    accent: 'from-indigo-950 via-violet-800 to-fuchsia-700',
-
-  },
-
 ];
-
-
 
 const experiments: Experiment[] = [
   {
-    title: 'WALL-E 3D Print Lab',
-    description: 'LAN MQTT telemetry streamer and print job monitor for Bambu Lab A1 mini.',
-    href: 'https://pablo-projects-hub.vercel.app',
+    title: '3D Print Lab & Deal Sourcing',
+    description: 'Creality K2 Plus & Bambu Lab A1 mini print farm paired with automated inventory arbitrage scrapers.',
+    href: '/about#studio',
   },
-
   {
-
+    title: 'Media & Press Coverage',
+    description: 'National and broadcast reporting across USA TODAY, Telemundo 52, Fox 7 Austin, and CBS Austin.',
+    href: '/about#press',
+  },
+  {
+    title: 'ATX Services Scout',
+    description: 'Central Texas directory comparing local mechanics, cleaners, and plumbers without sponsored placement.',
+    href: 'https://atx-services-scout.vercel.app',
+  },
+  {
     title: 'Resume Scorer',
-
-    description: 'Role-fit scoring and gap notes for sales resumes.',
-
+    description: 'Role-fit scoring and practical gap analysis for sales and technical resumes.',
     href: '/tools/resume-scorer',
-
   },
-
   {
-
     title: 'Cold Email Generator',
-
-    description: 'Outbound draft generator for follow-up and prospecting motion.',
-
+    description: 'Structured outbound sales draft generator for prospecting and multi-touch follow-up.',
     href: '/tools/cold-email',
-
   },
-
   {
-
-    title: 'Business Idea Validator',
-
-    description: 'Lightweight viability, competitor, and market-shape checks.',
-
-    href: '/tools/business-validator',
-
-  },
-
-  {
-
-    title: 'Pitch Deck Generator',
-
-    description: 'Investor-style structure and talking points from a rough idea.',
-
-    href: '/tools/pitch-generator',
-
-  },
-
-  {
-
-    title: 'Competitor Analyzer',
-
-    description: 'Positioning comparison for early market research.',
-
-    href: '/tools/competitor-analyzer',
-
-  },
-
-  {
-
-    title: 'All Experiments',
-
-    description: 'Developer, nonprofit, security, and writing utilities.',
-
+    title: 'All Tools & Experiments',
+    description: 'Browse the broader library of developer, security, and writing utilities.',
     href: '/tools',
-
   },
-
 ];
 
-
-
 export default function Projects() {
-
   return (
-
     <section id="projects" className="bg-slate-50">
-
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-
-        <div className="mb-10 max-w-3xl">
-
-          <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-700">Selected work</p>
-
-          <h2 className="mt-3 text-3xl font-black text-slate-950 sm:text-5xl">The projects worth clicking first.</h2>
-
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-700">Production Work</p>
+          <h2 className="mt-3 text-3xl font-black text-slate-950 sm:text-5xl">Real software built for real problems.</h2>
           <p className="mt-4 text-lg leading-8 text-slate-600">
-
-            These are the strongest live builds: real workflows, deployed products, clear technical surfaces, and honest notes where a product is still a prototype.
-
+            Every project here represents real code, active users, and verified data. If a tool isn't fully functional or ready for public use, we don't list it here.
           </p>
-
         </div>
 
-
-
-        <div className="grid gap-6">
-
+        <div className="grid gap-8">
           {projects.map((project, index) => {
-
             const Icon = project.icon;
 
-
-
             return (
-
               <article
-
                 key={project.title}
-
-                className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-xl"
-
+                className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-xl"
               >
-
-                <div className="grid lg:grid-cols-[0.9fr_1.25fr]">
-
-                  <div className={`relative min-h-64 bg-gradient-to-br ${project.accent} p-6 text-white`}>
-
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.22),transparent_30%),radial-gradient(circle_at_80%_10%,rgba(255,255,255,0.12),transparent_26%)]" />
-
-                    <div className="relative flex h-full min-h-52 flex-col justify-between">
-
+                <div className="grid lg:grid-cols-[0.85fr_1.3fr]">
+                  <div className={`relative min-h-64 bg-gradient-to-br ${project.accent} p-8 text-white flex flex-col justify-between`}>
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.18),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(255,255,255,0.1),transparent_30%)]" />
+                    <div className="relative">
                       <div className="flex items-center justify-between gap-4">
-
                         <span className="rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em]">
-
                           {project.status}
-
                         </span>
-
-                        <span className="text-sm font-bold text-white/70">0{index + 1}</span>
-
+                        <span className="text-sm font-mono font-bold text-white/70">0{index + 1}</span>
                       </div>
-
-                      <div>
-
-                        <div className="mb-5 flex h-20 w-20 items-center justify-center rounded-lg border border-white/20 bg-black/20 shadow-2xl backdrop-blur">
-
-                          <Icon size={34} />
-
-                        </div>
-
-                        <p className="text-sm font-bold uppercase tracking-[0.16em] text-white/70">{project.kicker}</p>
-
-                        <h3 className="mt-2 text-4xl font-black tracking-tight">{project.title}</h3>
-
+                      <div className="mt-8 mb-6 flex h-20 w-20 items-center justify-center rounded-xl border border-white/20 bg-black/20 shadow-2xl backdrop-blur">
+                        <Icon size={36} />
                       </div>
-
+                      <p className="text-xs font-bold uppercase tracking-[0.18em] text-white/70">{project.kicker}</p>
+                      <h3 className="mt-2 text-3xl font-black tracking-tight">{project.title}</h3>
                     </div>
 
-                  </div>
-
-
-
-                  <div className="p-6 sm:p-8">
-
-                    <p className="text-xl font-bold leading-8 text-slate-950">{project.description}</p>
-
-
-
-                    <div className="mt-6 grid gap-4 md:grid-cols-2">
-
-                      <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-
-                        <div className="mb-2 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.12em] text-slate-500">
-
-                          <ShieldCheck size={16} />
-
-                          User
-
+                    {project.modules && (
+                      <div className="relative mt-6 pt-4 border-t border-white/15">
+                        <p className="text-xs font-bold uppercase tracking-wider text-white/60 mb-2">Integrated Modules:</p>
+                        <div className="grid grid-cols-1 gap-1 text-xs text-white/90">
+                          {project.modules.map((m) => (
+                            <div key={m} className="flex items-center gap-1.5">
+                              <span className="h-1.5 w-1.5 rounded-full bg-blue-300" />
+                              <span>{m}</span>
+                            </div>
+                          ))}
                         </div>
-
-                        <p className="text-sm leading-6 text-slate-700">{project.audience}</p>
-
                       </div>
-
-                      <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-
-                        <div className="mb-2 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.12em] text-slate-500">
-
-                          <BrainCircuit size={16} />
-
-                          Build
-
-                        </div>
-
-                        <p className="text-sm leading-6 text-slate-700">{project.build}</p>
-
-                      </div>
-
-                    </div>
-
-
-
-                    {project.dataNote && (
-
-                      <div className="mt-4 rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-950">
-
-                        <span className="font-bold">Data note:</span> {project.dataNote}
-
-                      </div>
-
                     )}
-
-
-
-                    <div className="mt-6 flex flex-wrap gap-2">
-
-                      {project.tags.map((tag) => (
-
-                        <span
-
-                          key={tag}
-
-                          className="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-700"
-
-                        >
-
-                          {tag}
-
-                        </span>
-
-                      ))}
-
-                    </div>
-
-
-
-                    <div className="mt-7 flex flex-wrap gap-3">
-
-                      <a
-
-                        href={project.live}
-
-                        target="_blank"
-
-                        rel="noopener noreferrer"
-
-                        className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2.5 font-bold text-white transition hover:bg-blue-700"
-
-                        aria-label={`Open ${project.title} live site`}
-
-                      >
-
-                        <ExternalLink size={18} />
-
-                        Live Demo
-
-                      </a>
-
-                      <a
-
-                        href={project.github}
-
-                        target="_blank"
-
-                        rel="noopener noreferrer"
-
-                        className="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-4 py-2.5 font-bold text-white transition hover:bg-slate-700"
-
-                        aria-label={`Open ${project.title} source code`}
-
-                      >
-
-                        <GithubIcon size={18} />
-
-                        Code
-
-                      </a>
-
-                    </div>
-
                   </div>
 
+                  <div className="p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                      <p className="text-xl font-bold leading-snug text-slate-950">{project.description}</p>
+
+                      {/* Feynman Principle Explanation Box */}
+                      <div className="mt-5 rounded-lg border border-blue-100 bg-blue-50/60 p-4">
+                        <p className="text-xs font-bold uppercase tracking-wider text-blue-900 mb-1.5 flex items-center gap-1.5">
+                          <Sparkles size={14} />
+                          How it works in plain English
+                        </p>
+                        <p className="text-sm leading-6 text-slate-800">{project.feynman}</p>
+                      </div>
+
+                      <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                        <div className="rounded-lg border border-slate-200 bg-slate-50 p-3.5">
+                          <div className="mb-1 flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-500">
+                            <ShieldCheck size={14} />
+                            Who It's For
+                          </div>
+                          <p className="text-xs leading-5 text-slate-700">{project.audience}</p>
+                        </div>
+                        <div className="rounded-lg border border-slate-200 bg-slate-50 p-3.5">
+                          <div className="mb-1 flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-500">
+                            <BrainCircuit size={14} />
+                            How It's Built
+                          </div>
+                          <p className="text-xs leading-5 text-slate-700">{project.build}</p>
+                        </div>
+                      </div>
+
+                      <div className="mt-5 flex flex-wrap gap-1.5">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-700"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mt-6 pt-5 border-t border-slate-100 flex flex-wrap gap-3">
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-blue-700 shadow-sm"
+                        aria-label={`Open ${project.title} live site`}
+                      >
+                        <ExternalLink size={16} />
+                        Launch Platform
+                      </a>
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-4 py-2 text-sm font-bold text-white transition hover:bg-slate-800 shadow-sm"
+                          aria-label={`Open ${project.title} source code`}
+                        >
+                          <GithubIcon size={16} />
+                          Source Code
+                        </a>
+                      )}
+                    </div>
+                  </div>
                 </div>
-
               </article>
-
             );
-
           })}
-
         </div>
 
-
-
+        {/* Experiments and Complementary Ventures */}
         <div className="mt-16 border-t border-slate-200 pt-12">
-
           <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-
             <div>
-
-              <p className="text-sm font-bold uppercase tracking-[0.16em] text-slate-500">Experiments</p>
-
-              <h3 className="mt-2 text-3xl font-black text-slate-950">Smaller tools and work in progress.</h3>
-
+              <p className="text-sm font-bold uppercase tracking-[0.16em] text-slate-500">Venture Lab & Experiments</p>
+              <h3 className="mt-2 text-2xl font-black text-slate-950 sm:text-3xl">Physical labs, media coverage, and specialized tools.</h3>
             </div>
-
-            <Link href="/tools" className="inline-flex items-center gap-2 font-bold text-blue-700 hover:text-blue-900">
-
-              Browse all experiments
-
-              <ArrowRight size={18} />
-
+            <Link href="/tools" className="inline-flex items-center gap-2 text-sm font-bold text-blue-700 hover:text-blue-900">
+              Browse all tools
+              <ArrowRight size={16} />
             </Link>
-
           </div>
-
-
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-
             {experiments.map((experiment) => (
-
               <Link
-
                 key={experiment.title}
-
                 href={experiment.href}
-
-                className="group rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-lg"
-
+                className="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-md flex flex-col justify-between"
               >
-
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-700 group-hover:bg-blue-50 group-hover:text-blue-700">
-
-                  <Wrench size={20} />
-
+                <div>
+                  <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100 text-slate-700 group-hover:bg-blue-50 group-hover:text-blue-700">
+                    <Wrench size={18} />
+                  </div>
+                  <h4 className="text-base font-black text-slate-950">{experiment.title}</h4>
+                  <p className="mt-2 text-xs leading-5 text-slate-600">{experiment.description}</p>
                 </div>
-
-                <h4 className="text-lg font-black text-slate-950">{experiment.title}</h4>
-
-                <p className="mt-2 text-sm leading-6 text-slate-600">{experiment.description}</p>
-
+                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-blue-700">
+                  <span>Explore</span>
+                  <ArrowRight size={14} className="transition group-hover:translate-x-1" />
+                </div>
               </Link>
-
             ))}
-
           </div>
-
         </div>
-
       </div>
-
     </section>
-
   );
-
 }
-
