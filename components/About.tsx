@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { ArrowRight, Award, BookOpen, Briefcase, Globe, GraduationCap, HeartHandshake, ShieldCheck, Sparkles, TrendingUp } from 'lucide-react';
+
+import { Briefcase, Globe, GraduationCap, ShieldCheck, Sparkles, TrendingUp } from 'lucide-react';
 
 export default function About() {
   return (
@@ -15,7 +15,7 @@ export default function About() {
             I build practical software and sell technology by solving real problems.
           </h1>
           <p className="text-lg leading-8 text-slate-700">
-            I am a first-generation American, a native Spanish speaker, and a builder who learned business by working close to the customer. Whether selling multi-million-dollar cloud infrastructure at Dell or writing software late at night, I live by the Feynman principle: if you can't explain how something works in simple everyday words, you don't understand it well enough. No buzzwords, no empty facades, and no tech for the sake of tech.
+            I am a first-generation American, a native Spanish speaker, and a builder who learned business by working close to the customer. Whether selling multi-million-dollar cloud infrastructure at Dell or writing software late at night, I live by the Feynman principle: if you can&apos;t explain how something works in simple everyday words, you don&apos;t understand it well enough. No buzzwords, no empty facades, and no tech for the sake of tech.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export default function About() {
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-amber-300 mb-1">Guiding Principle</p>
                 <p className="text-base font-semibold italic text-slate-100">
-                  "If you can't explain it to a six-year-old, you don't understand it yourself."
+                  &ldquo;If you can&apos;t explain it to a six-year-old, you don&apos;t understand it yourself.&rdquo;
                 </p>
               </div>
               <p className="text-xs text-slate-400 mt-4">— Richard Feynman</p>
@@ -48,7 +48,7 @@ export default function About() {
               <h2 className="text-2xl font-black text-slate-950">The Short Version</h2>
               <div className="mt-4 space-y-3.5 text-sm leading-6 text-slate-600">
                 <p>
-                  <strong>Where I come from:</strong> I started college at Austin Community College (ACC) while working odd jobs, transferred to UT Austin, completed dual B.A.s in International Relations & Finance, and earned my Master's in Information Security & Privacy.
+                  <strong>Where I come from:</strong> I started college at Austin Community College (ACC) while working odd jobs, transferred to UT Austin, completed dual B.A.s in International Relations & Finance, and earned my Master&apos;s in Information Security & Privacy.
                 </p>
                 <p>
                   <strong>Where I learned business:</strong> On the road as an Uber Account Executive pitching restaurant owners across Texas, then five years at Dell selling enterprise and cloud data center infrastructure, achieving 237% quota attainment and leading 7,500+ ERG members globally.
@@ -62,10 +62,10 @@ export default function About() {
             <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
               <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Austin, Texas</span>
               <a
-                href="mailto:pratt3508@gmail.com"
+                href="mailto:pablo.a.pratt@gmail.com"
                 className="text-xs font-bold text-blue-700 hover:text-blue-900 transition-colors"
               >
-                pratt3508@gmail.com →
+                pablo.a.pratt@gmail.com →
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function About() {
                 <p className="text-sm font-bold text-slate-900">Global Cloud & Infrastructure Sales — Dell</p>
                 <p className="text-xs text-slate-500">5 Years • SLED, SMB, Enterprise & Cloud Accounts</p>
                 <p className="text-xs leading-5 text-slate-600">
-                  Supported Dell's largest cloud providers and data center clients. Achieved 237% peak quota attainment and three consecutive quarters at 146%. Selected into elite Technical Sales Program (Top 5%).
+                  Supported Dell&apos;s largest cloud providers and data center clients. Achieved 237% peak quota attainment and three consecutive quarters at 146%. Selected into elite Technical Sales Program (Top 5%).
                 </p>
               </div>
 
@@ -93,7 +93,7 @@ export default function About() {
                 <p className="text-sm font-bold text-slate-900">Global Chair — Latino Connection ERG</p>
                 <p className="text-xs text-slate-500">Dell • 7,500+ Global Members</p>
                 <p className="text-xs leading-5 text-slate-600">
-                  Youngest sitting ERG leader in Dell's history. Represented Dell at the United Nations and co-presented with Michael Dell during a global Quarterly Business Review.
+                  Youngest sitting ERG leader in Dell&apos;s history. Represented Dell at the United Nations and co-presented with Michael Dell during a global Quarterly Business Review.
                 </p>
               </div>
 
@@ -168,7 +168,7 @@ export default function About() {
                 Security First
               </p>
               <p className="text-xs leading-5 text-slate-600">
-                Master's in InfoSec means user privacy, row-level data isolation, and cryptographic integrity are non-negotiable baselines.
+                Master&apos;s in InfoSec means user privacy, row-level data isolation, and cryptographic integrity are non-negotiable baselines.
               </p>
             </div>
 

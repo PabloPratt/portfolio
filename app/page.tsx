@@ -20,10 +20,18 @@ const paths = [
       "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
   },
   {
+    title: "Ventures",
+    href: "/about#ventures",
+    kicker: "Commerce & Services",
+    text: "Flipping & reselling, custom 3D printing, fresh microgreens for local restaurants, and affordable custom websites for small businesses.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
     title: "3D Print Lab & Deal Studio",
     href: "/about#studio",
     kicker: "Hardware & Commerce",
-    text: "Creality K2 Plus & Bambu Lab A1 mini farm paired with custom retail arbitrage bots to spot high-ROI market anomalies.",
+    text: "Bambu Lab A1 mini, with a Creality K2 Plus on the way, paired with custom retail arbitrage bots to spot high-ROI market anomalies.",
     image:
       "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
   },
@@ -88,7 +96,7 @@ export default function Home() {
             </div>
             <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
               <p className="text-3xl font-black text-slate-950">23.7M+</p>
-              <p className="mt-1 text-xs font-semibold text-slate-600">Organic views scaled over 1.5 yrs</p>
+              <p className="mt-1 text-xs font-semibold text-slate-600">Likes across three social media accounts in 1.5 years</p>
             </div>
             <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
               <p className="text-3xl font-black text-slate-950">7.5K+</p>

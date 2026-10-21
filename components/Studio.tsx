@@ -1,4 +1,4 @@
-import { Bot, Clock, Cpu, Mail, Sparkles, TrendingUp } from 'lucide-react';
+import { Clock, Cpu, Mail, Sparkles, TrendingUp } from 'lucide-react';
 
 export default function Studio() {
   return (
@@ -25,18 +25,18 @@ export default function Studio() {
             <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 mb-4 border border-blue-500/20">
               <Cpu size={24} />
             </div>
-            <h3 className="text-xl font-bold">The Print Farm</h3>
+            <h3 className="text-xl font-bold">The Print Setup</h3>
             <p className="mt-2 text-sm leading-6 text-slate-400">
-              Dual-printer setup built for speed, size, and multi-color accuracy:
+              Bambu Lab A1 mini, with a Creality K2 Plus on the way:
             </p>
             <ul className="mt-4 space-y-2 text-sm text-slate-300">
               <li className="flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
-                <strong className="text-white">Creality K2 Plus:</strong> High-speed large-format engineering prints & durable structural parts.
+                <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
+                <strong className="text-white">Bambu Lab A1 mini (Active):</strong> 4-filament AMS multi-color precision, rapid prototyping & artistic designs.
               </li>
               <li className="flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
-                <strong className="text-white">Bambu Lab A1 mini:</strong> 4-filament AMS multi-color precision, rapid prototyping & artistic designs.
+                <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
+                <strong className="text-white">Creality K2 Plus (On the way):</strong> High-speed large-format engineering prints & durable structural parts planned.
               </li>
             </ul>
           </div>
@@ -69,23 +69,23 @@ export default function Studio() {
             </div>
             <div className="flex items-center gap-2">
               <h3 className="text-xl font-bold">Custom Print Orders</h3>
-              <span className="rounded-full bg-amber-500/20 px-2 py-0.5 text-[11px] font-bold text-amber-300 uppercase tracking-wide">
-                Backlogged
+              <span className="rounded-full bg-emerald-500/20 px-2 py-0.5 text-[11px] font-bold text-emerald-300 uppercase tracking-wide">
+                Taking custom orders
               </span>
             </div>
             <p className="mt-2 text-sm leading-6 text-slate-300">
-              We are currently running a queue of custom print orders and rapid prototypes. However, we take on new selective requests when capacity opens.
+              We are currently taking custom print orders and prototyping requests. We work directly with you to turn your ideas or 3D files into clean physical parts.
             </p>
             <div className="mt-6 pt-4 border-t border-slate-800">
               <p className="text-xs text-slate-400 mb-3">
                 Have an STL file, idea, or replacement part you need fabricated?
               </p>
               <a
-                href="mailto:pratt3508@gmail.com?subject=Custom%203D%20Print%20Quote%20Request"
+                href="mailto:pablo.a.pratt@gmail.com?subject=Custom%203D%20Print%20Quote%20Request"
                 className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-blue-500 shadow-md"
               >
                 <Mail size={16} />
-                pratt3508@gmail.com
+                pablo.a.pratt@gmail.com
               </a>
             </div>
           </div>

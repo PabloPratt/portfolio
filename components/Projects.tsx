@@ -6,10 +6,10 @@ import {
   Car,
   Database,
   ExternalLink,
-  LineChart,
+
   Lock,
-  Radio,
-  Search,
+
+
   ShieldAlert,
   ShieldCheck,
   Sparkles,
@@ -182,7 +182,7 @@ const projects: Project[] = [
 const experiments: Experiment[] = [
   {
     title: '3D Print Lab & Deal Sourcing',
-    description: 'Creality K2 Plus & Bambu Lab A1 mini print farm paired with automated inventory arbitrage scrapers.',
+    description: 'Bambu Lab A1 mini, with a Creality K2 Plus on the way, paired with automated inventory arbitrage scrapers.',
     href: '/about#studio',
   },
   {
@@ -220,7 +220,7 @@ export default function Projects() {
           <p className="text-sm font-bold uppercase tracking-[0.16em] text-blue-700">Production Work</p>
           <h2 className="mt-3 text-3xl font-black text-slate-950 sm:text-5xl">Real software built for real problems.</h2>
           <p className="mt-4 text-lg leading-8 text-slate-600">
-            Every project here represents real code, active users, and verified data. If a tool isn't fully functional or ready for public use, we don't list it here.
+            Every project here represents real code, active users, and verified data. If a tool isn&apos;t fully functional or ready for public use, we don&apos;t list it here.
           </p>
         </div>
 
@@ -282,14 +282,14 @@ export default function Projects() {
                         <div className="rounded-lg border border-slate-200 bg-slate-50 p-3.5">
                           <div className="mb-1 flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-500">
                             <ShieldCheck size={14} />
-                            Who It's For
+                            Who It&apos;s For
                           </div>
                           <p className="text-xs leading-5 text-slate-700">{project.audience}</p>
                         </div>
                         <div className="rounded-lg border border-slate-200 bg-slate-50 p-3.5">
                           <div className="mb-1 flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-slate-500">
                             <BrainCircuit size={14} />
-                            How It's Built
+                            How It&apos;s Built
                           </div>
                           <p className="text-xs leading-5 text-slate-700">{project.build}</p>
                         </div>

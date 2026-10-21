@@ -22,7 +22,7 @@ export default function Skills() {
     },
     {
       category: '🌍 Sales & Audience Growth',
-      skills: ['Enterprise Sales (Dell)', '237% Quota Attainment', 'Audience Growth (23.7M+ Views Across 3 Channels)', 'Strategic Account Growth & Management Handover', '146% Attainment for 3 Quarters', 'B2B Sales Strategy', 'C-suite Communication', 'Global Markets', 'ERG Leadership'],
+      skills: ['Enterprise Sales (Dell)', '237% Quota Attainment', 'Audience Growth (23.7M+ Likes Across 3 Social Accounts)', 'Strategic Account Growth & Management Handover', '146% Attainment for 3 Quarters', 'B2B Sales Strategy', 'C-suite Communication', 'Global Markets', 'ERG Leadership'],
     },
     {
       category: '🤝 Social Impact',
@@ -83,15 +83,15 @@ export default function Skills() {
             </div>
             <div className="space-y-2">
               <p className="text-3xl font-bold text-blue-600">23.7M+</p>
-              <p className="text-slate-600">Organic views scaled across 3 accounts built over 1.5 years prior to handover</p>
+              <p className="text-slate-600">Likes across three social media accounts in 1.5 years</p>
             </div>
             <div className="space-y-2">
               <p className="text-3xl font-bold text-blue-600">7.5K+</p>
-              <p className="text-slate-600">Members led as Global Chair of Dell's Latino Connection ERG</p>
+              <p className="text-slate-600">Members led as Global Chair of Dell&apos;s Latino Connection ERG</p>
             </div>
             <div className="space-y-2">
               <p className="text-3xl font-bold text-blue-600">Top 5%</p>
-              <p className="text-slate-600">Selected into Dell's elite Technical Sales Program</p>
+              <p className="text-slate-600">Selected into Dell&apos;s elite Technical Sales Program</p>
             </div>
             <div className="space-y-2">
               <p className="text-3xl font-bold text-blue-600">EN/ES</p>

@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import About from "@/components/About";
+import Ventures from "@/components/Ventures";
 import Studio from "@/components/Studio";
 import Press from "@/components/Press";
 import Skills from "@/components/Skills";
@@ -11,6 +12,7 @@ export default function AboutPage() {
       <Header />
       <main id="main-content">
         <About />
+        <Ventures />
         <Studio />
         <Press />
         <Skills />
