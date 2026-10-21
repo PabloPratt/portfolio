@@ -99,9 +99,9 @@ export default function About() {
 
               <div className="border-l-2 border-emerald-600 pl-4 space-y-1">
                 <p className="text-sm font-bold text-slate-900">Co-Developer — Shifu & Paradox Algo</p>
-                <p className="text-xs text-slate-500">Algorithmic Trading & Prop Firm Automation</p>
+                <p className="text-xs text-slate-500">Algorithmic Trading • 1,380+ Paid Discord Community</p>
                 <p className="text-xs leading-5 text-slate-600">
-                  Co-developed automated execution algorithms and indicator systems bridging TradingView Pine Script alerts to Tradovate accounts with disciplined drawdown parameters.
+                  Co-developed automated execution algorithms and indicator systems bridging TradingView Pine Script alerts to Tradovate accounts with disciplined drawdown parameters, powering a private paid community of 1,380+ futures traders.
                 </p>
               </div>
 

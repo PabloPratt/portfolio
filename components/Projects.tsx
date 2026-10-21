@@ -98,13 +98,13 @@ const projects: Project[] = [
     shortName: 'SHIFU',
     kicker: 'Algorithmic trading & prop execution',
     description:
-      'Automated trading execution platform and proprietary indicator suite co-developed for futures and options traders.',
+      'Automated trading execution platform and proprietary indicator suite co-developed for futures and options traders, powering a paid Discord community of 1,380+ active members.',
     feynman:
-      `Most traders lose money because of human emotion—fear, greed, and hesitating at critical moments. Shifu and Paradox Algo automate disciplined trading strategies. They analyze real-time market structure on the chart and send automated buy/sell orders directly to prop firm accounts (like Tradeify, Apex, and Topstep). The system enforces strict daily loss limits and trailing drawdowns automatically, so trades are executed with machine discipline and zero hesitation.`,
+      `Most traders lose money because of human emotion—fear, greed, and hesitating at critical moments. Shifu and Paradox Algo automate disciplined trading strategies. They analyze real-time market structure on the chart and send automated buy/sell orders directly to prop firm accounts (like Tradeify, Apex, and Topstep). The system enforces strict daily loss limits and trailing drawdowns automatically, so trades are executed with machine discipline and zero hesitation. Today, Paradox Algo powers a private paid Discord community of 1,380+ members who share presets, copyable chart configs, and live market strategies.`,
     audience: 'Futures and options traders managing funded prop firm accounts who require disciplined, automated execution.',
     build: 'TradingView Pine Script indicators, high-speed webhook execution bridge, Tradovate API, and live PnL risk-capping engine.',
     status: 'Production Platforms',
-    tags: ['Algorithmic Trading', 'Futures & Options', 'Prop Firm Automation', 'Tradovate API', 'Pine Script'],
+    tags: ['Algorithmic Trading', '1,380+ Paid Community', 'Prop Firm Automation', 'Tradovate API', 'Pine Script'],
     live: 'https://shifu.trade/dashboard',
     icon: TrendingUp,
     accent: 'from-emerald-950 via-teal-950 to-cyan-900',
