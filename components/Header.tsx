@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X, Mail, ExternalLink } from 'lucide-react';
+import { Menu, X, Mail } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +40,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-6">
           <div className="flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 font-mono text-[11px] font-medium text-emerald-400">
             <span className="h-2 w-2 rounded-full bg-emerald-400 status-ping"></span>
-            <span>16/16 Systems Live (200 OK)</span>
+            <span>Selected Software Projects</span>
           </div>
 
           <div className="flex items-center gap-6">
@@ -90,7 +90,7 @@ export default function Header() {
           <div className="absolute top-full left-0 right-0 bg-slate-950/95 border-b border-white/10 p-5 shadow-2xl lg:hidden flex flex-col gap-3.5 backdrop-blur-2xl">
             <div className="flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 font-mono text-[11px] font-medium text-emerald-400 self-start mb-1">
               <span className="h-2 w-2 rounded-full bg-emerald-400 status-ping"></span>
-              <span>16 Systems Live (200 OK)</span>
+              <span>Selected Software Projects</span>
             </div>
             {navItems.map((item) => (
               <Link

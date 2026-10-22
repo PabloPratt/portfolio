@@ -7,7 +7,7 @@ const paths = [
     title: "Work",
     href: "/work",
     kicker: "Production Software",
-    text: "Argus, MotorMind, Shifu & Paradox Algo, Janus, AUTONOMY, Loki, and DOOOD—built for real workflows with zero fluff.",
+    text: "Janus, AUTONOMY, Loki, DOOOD, and ATX Services Scout, built for business research and everyday workflows.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
   },
@@ -23,7 +23,7 @@ const paths = [
     title: "Ventures",
     href: "/about#ventures",
     kicker: "Commerce & Services",
-    text: "Bot-powered deal flipping, automated futures trading, travel-photo wall art, custom 3D printing, fresh microgreens for local restaurants, and affordable custom websites for small businesses.",
+    text: "Bot-powered deal flipping, travel-photo wall art, custom 3D printing, affordable custom websites for small businesses.",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
   },

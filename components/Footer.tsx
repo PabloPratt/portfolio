@@ -20,7 +20,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-xs font-mono text-emerald-400">
               <span className="h-2 w-2 rounded-full bg-emerald-400 status-ping" />
-              <span>All 16 Flagship Systems Verified Operational</span>
+              <span>Explore Selected Software Projects</span>
             </div>
           </div>
 

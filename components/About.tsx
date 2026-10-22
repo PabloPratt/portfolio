@@ -54,7 +54,7 @@ export default function About() {
                   <strong>Where I learned business:</strong> On the road as an Uber Account Executive pitching restaurant owners across Texas, then five years at Dell selling enterprise and cloud data center infrastructure, achieving 237% quota attainment and leading 7,500+ ERG members globally.
                 </p>
                 <p>
-                  <strong>What I build now:</strong> Production software with zero fluff—from cybersecurity intelligence consoles (Argus) and universal vehicle diagnostics (MotorMind) to automated trading algorithms (Shifu & Paradox Algo) and an active 3D fabrication lab.
+                  <strong>What I build now:</strong> Business research tools, household finance software, private writing workspaces, and digital footprint applications.
                 </p>
               </div>
             </div>
@@ -97,13 +97,6 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="border-l-2 border-emerald-600 pl-4 space-y-1">
-                <p className="text-sm font-bold text-slate-900">Co-Developer — Shifu & Paradox Algo</p>
-                <p className="text-xs text-slate-500">Algorithmic Trading • 1,380+ Paid Discord Community</p>
-                <p className="text-xs leading-5 text-slate-600">
-                  Co-developed automated execution algorithms and indicator systems bridging TradingView Pine Script alerts to Tradovate accounts with disciplined drawdown parameters, powering a private paid community of 1,380+ futures traders.
-                </p>
-              </div>
 
               <div className="border-l-2 border-cyan-600 pl-4 space-y-1">
                 <p className="text-sm font-bold text-slate-900">Account Executive — Uber</p>

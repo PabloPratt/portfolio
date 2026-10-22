@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
-import AiChatWidget from "@/components/AiChatWidget";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -18,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Pablo Pratt | Enterprise Solutions & Software Engineer",
-  description: "Verified software systems, quantitative trading platforms, cybersecurity sentries, and automotive telematics built by Pablo Pratt. 100% operational, real data, zero facades.",
+  description: "Software projects, business research, writing tools, and privacy applications built by Pablo Pratt.",
   keywords: "portfolio, enterprise software, cybersecurity, STIR/SHAKEN, quantitative trading, automotive telematics, next.js, typescript, pablo pratt",
   authors: [{ name: "Pablo Pratt", url: "https://portfolio-zeta-green-62.vercel.app" }],
   openGraph: {
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://portfolio-zeta-green-62.vercel.app",
     title: "Pablo Pratt | Enterprise Solutions & Software Engineer",
-    description: "Production software systems, quantitative trading platforms, and cybersecurity tools built for real workflows.",
+    description: "Selected software projects, business research, writing tools, and privacy applications.",
   },
 };
 
@@ -53,7 +52,6 @@ export default function RootLayout({
             Skip to main content
           </a>
           {children}
-          <AiChatWidget />
         </ClerkProvider>
       </body>
     </html>

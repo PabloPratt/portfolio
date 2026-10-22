@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Bot, Check, Globe, Image as ImageIcon, Mail, Printer, ShoppingBag, Sparkles, Sprout, TrendingUp } from 'lucide-react';
+import { ArrowRight, Bot, Check, Globe, Image as ImageIcon, Mail, Printer, ShoppingBag, Sparkles } from 'lucide-react';
 
 export default function Ventures() {
   return (
@@ -15,7 +15,7 @@ export default function Ventures() {
             Hands-on businesses built on honest value.
           </h2>
           <p className="mt-4 text-lg leading-8 text-slate-600">
-            Beyond writing software, I run small, tangible businesses grounded in everyday economics: catching underpriced deals, running automated trading, selling travel photography as wall art, manufacturing physical parts, growing fresh food, and building websites for local operators. No buzzwords—just clear work that solves real needs.
+            Beyond writing software, I run small, tangible businesses grounded in everyday economics: catching underpriced deals, selling travel photography as wall art, manufacturing physical parts, and building websites for local operators. No buzzwords—just clear work that solves real needs.
           </p>
         </div>
 
@@ -107,82 +107,6 @@ export default function Ventures() {
             </div>
           </div>
 
-          {/* Venture 3: Microgreens */}
-          <div className="flex flex-col justify-between rounded-xl border border-slate-200 bg-stone-50/50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-            <div>
-              <div className="flex items-center justify-between gap-2 mb-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
-                  <Sprout size={24} />
-                </div>
-                <span className="rounded-full bg-emerald-100/70 px-2.5 py-0.5 text-xs font-bold text-emerald-800">
-                  Local Harvest
-                </span>
-              </div>
-
-              <h3 className="text-xl font-black text-slate-950">Microgreens</h3>
-              <p className="mt-1 text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                Grown Local • Delivered Fresh
-              </p>
-
-              <p className="mt-4 text-sm leading-6 text-slate-600">
-                We grow nutrient-dense microgreens locally in Austin and sell directly to neighborhood restaurants, chefs, and food lovers who want crisp texture and bold flavor.
-              </p>
-
-              <div className="mt-4 space-y-2 text-xs text-slate-600 bg-white rounded-lg p-3.5 border border-slate-200">
-                <p className="font-bold text-slate-900">What they are & why they matter:</p>
-                <p>
-                  Microgreens are young vegetable greens harvested right after the first leaves sprout (10–14 days). Many varieties pack more vitamins per bite than the full-grown plant, and they add intense flavor to salads, sandwiches, and entrees.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-6 pt-4 border-t border-slate-200">
-              <a
-                href="mailto:pablo.a.pratt@gmail.com?subject=Microgreens"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-700 px-4 py-2.5 text-xs font-bold text-white transition hover:bg-emerald-600 shadow-sm text-center"
-              >
-                <Mail size={15} />
-                Restaurant or need custom delivery? Let us know
-              </a>
-            </div>
-          </div>
-
-          {/* Venture 4: Automated Trading */}
-          <div className="flex flex-col justify-between rounded-xl border border-slate-200 bg-stone-50/50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-            <div>
-              <div className="flex items-center justify-between gap-2 mb-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-violet-500/10 text-violet-700 border border-violet-500/20">
-                  <TrendingUp size={24} />
-                </div>
-                <span className="rounded-full bg-violet-100/70 px-2.5 py-0.5 text-xs font-bold text-violet-800">
-                  Trading
-                </span>
-              </div>
-
-              <h3 className="text-xl font-black text-slate-950">Automated Futures Trading</h3>
-              <p className="mt-1 text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                Paradox Algo • Shifu • Prop Firm Capital
-              </p>
-
-              <p className="mt-4 text-sm leading-6 text-slate-600">
-                We trade stock-index and gold futures with computer-run strategies instead of gut feeling, using a prop firm&apos;s capital rather than our own.
-              </p>
-
-              <div className="mt-4 space-y-2 text-xs text-slate-600 bg-white rounded-lg p-3.5 border border-slate-200">
-                <p className="font-bold text-slate-900">How it works in plain words:</p>
-                <p>
-                  Paradox Algo strategies watch the chart and decide when to buy or sell. Shifu passes each signal to the broker in under a second, and every trade goes in with its stop-loss already set. Daily loss limits shut things off automatically, so fear and greed never get a vote.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
-              <span className="font-semibold">Risk caps enforced automatically</span>
-              <a href="/work" className="inline-flex items-center gap-1 font-bold text-violet-800 hover:text-violet-950">
-                Details <ArrowRight size={14} />
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Print on Demand: wall art gallery */}
