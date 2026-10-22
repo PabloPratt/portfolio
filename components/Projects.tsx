@@ -122,27 +122,6 @@ const projects: Project[] = [
     accent: 'from-zinc-500 to-amber-600',
   },
 
-  {
-    id: 'atx-scout',
-    title: 'ATX Services Scout',
-    shortName: 'SCOUT',
-    category: 'Business Intel & SaaS',
-    kicker: 'Unbiased Central Texas contractor benchmark',
-    description:
-      'Central Texas services comparison platform benchmarking quotes, hourly rates, and verified reviews for mechanics, plumbers, and contractors without sponsored placement.',
-    feynman:
-      'Review websites like Yelp and Angi often rank businesses based on who pays the most advertising dollars. ATX Services Scout is an uncorrupted directory of Austin tradespeople that benchmarks actual hourly rates, verified credentials, and real customer reviews with zero sponsored placement.',
-    audience: 'Central Texas homeowners and vehicle owners seeking fair contractor pricing.',
-    build: 'Next.js, TypeScript, municipal rate database, and transparent review crawler.',
-    status: 'Project link',
-    tags: ['Austin Directory', 'Unbiased Pricing', 'Next.js', 'Contractor Rates', 'Open Source'],
-    live: 'https://atx-services-scout.vercel.app',
-    github: 'https://github.com/PabloPratt/atx-services-scout',
-    isPrivate: false,
-    repoLabel: 'GitHub Repo (Public)',
-    icon: Wrench,
-    accent: 'from-amber-600 to-yellow-600',
-  },
 
 ];
 

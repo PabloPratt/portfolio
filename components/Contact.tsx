@@ -48,7 +48,6 @@ export default function Contact() {
             <div className="grid gap-4 md:grid-cols-2">
               {[
                 { label: 'Janus Live', href: 'https://janus-eta.vercel.app' },
-                { label: 'ATX Services Scout', href: 'https://atx-services-scout.vercel.app' },
               ].map((link) => (
                 <a
                   key={link.label}

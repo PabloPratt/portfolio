@@ -7,7 +7,7 @@ const paths = [
     title: "Work",
     href: "/work",
     kicker: "Production Software",
-    text: "Janus, AUTONOMY, Loki, DOOOD, and ATX Services Scout, built for business research and everyday workflows.",
+    text: "Janus, AUTONOMY, Loki, and DOOOD, built for business research and everyday workflows.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
   },
